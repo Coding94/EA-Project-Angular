@@ -1,0 +1,12 @@
+.leftDiv {
+  height: 90%;
+  flex-grow: 1;
+  /* width: fit-content; */
+  background-color: rgb(143, 209, 209);
+}
+.rightDiv {
+  height: 90%;
+  flex-grow: 1;
+  /* width: fit-content; */
+  background-color: rgb(185, 153, 218);
+}
