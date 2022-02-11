@@ -1,0 +1,47 @@
+.battleFieldCard {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/Background-images/Battlefield-bg-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.gradientColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  background: rgb(36, 0, 10);
+  background: linear-gradient(
+    67deg,
+    rgba(36, 0, 10, 1) 0%,
+    rgba(13, 31, 71, 0.938) 0%,
+    rgba(221, 15, 46, 0.8) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.gradientColor h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.battleFieldLogo {
+  height: max-content;
+  width: 150px;
+  transition: all 300ms ease-out;
+  z-index: 2;
+}
