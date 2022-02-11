@@ -1,3 +1,10 @@
+:root {
+  --background-color-orange: #f56c2c;
+  --background-color-red: #ff4747;
+  --background-color-transparent: transparent;
+  --border-size: 2px;
+}
+
 .leftDiv {
   height: 90%;
   flex-grow: 1;
@@ -9,4 +16,332 @@
   flex-grow: 1;
   /* width: fit-content; */
   background-color: rgb(185, 153, 218);
+}
+
+.btnSize {
+  height: 60px;
+  width: 168px;
+  margin: 10px;
+}
+
+.rel-pos {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.bttn {
+  background-color: #f56c2c;
+  color: rgb(255, 255, 255);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn.btnHover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color-orange);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn.btnHover:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: #f56c2c;
+  color: white;
+}
+
+/* Transparent Button */
+
+.bttn-two {
+  background-color: var(--background-color-transparent);
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn-two.btnHover2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 2px solid black;
+  transition: all 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn-two.btnHover2:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: var(--background-color-transparent);
+}
+
+/* Red Button */
+
+.bttn-three {
+  background-color: #ff4747;
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn-three.btnHover3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color-red);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn-three.btnHover3:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: #ff4747;
+}
+
+.paginationBttns {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  margin-top: 20px;
+}
+.previousBttn {
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-grow: 2;
+  border: 2px solid #585858;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.previousBttn:hover {
+  cursor: default;
+}
+.numbersBttn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  flex-grow: 10;
+  border-top: 2px solid #585858;
+  border-bottom: 2px solid #585858;
+}
+.nextBttn {
+  color: #c2c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-grow: 1;
+  border: 2px solid #585858;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.firstSpan {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #585858;
+  border-radius: 50%;
+}
+
+.secondSpan {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+.secondSpan:hover {
+  border: 2px solid #f3f3f3;
+  color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nextBttn:hover {
+  border: 2px solid #f3f3f3;
+  cursor: pointer;
+  color: #f3f3f3;
+}
+
+.scrollBarPers {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.leftBttn {
+  height: 33px;
+  width: 30px;
+  border: 2px solid #4f4f4f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #4f4f4f;
+  font-size: 30px;
+  flex-grow: 1;
+}
+.rightBttn {
+  height: 33px;
+  width: 30px;
+  border: 2px solid #f0f0f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #f0f0f1;
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+.scrollBarBttn {
+  height: 14px;
+  flex-grow: 50;
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 4px black;
+}
+.scrollBarBttnNav {
+  height: 14px;
+  width: 45%;
+  background-color: grey;
+  border-radius: 10px;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.dropPers {
+  background-color: white;
+  border-radius: 0;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.dropup .dropdown-toggle::after {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+}
+
+.flex div {
+  margin-right: 35px;
+  margin-left: 20px;
+  height: 39px;
+  width: 150px;
+  /* padding: 8px; */
+  border-bottom: 1px solid lightgray;
+  transition: linear 500ms;
+}
+
+.flex div:hover {
+  padding-left: 20px;
+  transition: linear 500ms;
+}
+
+.flex div:last-child {
+  border: none;
+}
+
+.flex-row-space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 8px;
+  width: 700px;
+}
+.secondDivContainer {
+  height: min-content;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttnAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttnBlueSize {
+  width: 400px;
+  transition: linear 200ms;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.bttnBlueSize:hover {
+  box-shadow: 0px 0px 30px 1px #2a7fff;
+  transform: scale(0.95);
+  transition: linear 200ms;
+}
+
+.titleComponent {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 10px;
 }
