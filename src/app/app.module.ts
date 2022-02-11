@@ -7,6 +7,7 @@ import { RedWhiteCardComponent } from './red-white-card/red-white-card.component
 import { RedCardComponent } from './red-card/red-card.component';
 import { DarkgrayCardComponent } from './darkgray-card/darkgray-card.component';
 import { MassEffectCardComponent } from './mass-effect-card/mass-effect-card.component';
+import { AzureCardComponent } from './azure-card/azure-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MassEffectCardComponent } from './mass-effect-card/mass-effect-card.com
     RedWhiteCardComponent,
     RedCardComponent,
     DarkgrayCardComponent,
-    MassEffectCardComponent
+    MassEffectCardComponent,
+    AzureCardComponent
   ],
   imports: [
     BrowserModule
