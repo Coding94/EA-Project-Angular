@@ -1,0 +1,25 @@
+.massEffectCard {
+  height: 310px;
+  width: 350px;
+  display: flex;
+  align-items: flex-end;
+
+  background-image: url(../../assets/Background-images/MassE-bg-card.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 300ms ease-out;
+}
+
+.massEffectCard:hover {
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.356);
+}
+
+.txtOfMEC {
+  height: 37%;
+  width: 100%;
+  background-color: white;
+  font-weight: bolder;
+  padding: 24px 14px;
+}

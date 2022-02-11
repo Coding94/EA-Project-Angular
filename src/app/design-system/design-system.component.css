@@ -7,6 +7,7 @@
 
 .rightDiv {
   display: flex;
+  flex-flow: wrap;
   gap: 20px;
   height: 90%;
   flex-grow: 1;

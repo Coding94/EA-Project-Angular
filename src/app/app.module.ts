@@ -6,6 +6,7 @@ import { DesignSystemComponent } from './design-system/design-system.component';
 import { RedWhiteCardComponent } from './red-white-card/red-white-card.component';
 import { RedCardComponent } from './red-card/red-card.component';
 import { DarkgrayCardComponent } from './darkgray-card/darkgray-card.component';
+import { MassEffectCardComponent } from './mass-effect-card/mass-effect-card.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DarkgrayCardComponent } from './darkgray-card/darkgray-card.component';
     DesignSystemComponent,
     RedWhiteCardComponent,
     RedCardComponent,
-    DarkgrayCardComponent
+    DarkgrayCardComponent,
+    MassEffectCardComponent
   ],
   imports: [
     BrowserModule
