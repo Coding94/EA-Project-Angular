@@ -4,7 +4,10 @@
   /* width: fit-content; */
   background-color: rgb(143, 209, 209);
 }
+
 .rightDiv {
+  display: flex;
+  gap: 20px;
   height: 90%;
   flex-grow: 1;
   /* width: fit-content; */
