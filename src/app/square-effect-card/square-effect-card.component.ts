@@ -9,4 +9,8 @@ export class SquareEffectCardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  funzioneHover() {
+    console.log('ciao a tutti 2 ');
+  }
 }
