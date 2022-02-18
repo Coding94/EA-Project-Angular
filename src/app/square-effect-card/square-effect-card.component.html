@@ -1,6 +1,16 @@
-<div (mouseover)="funzioneHover()" class="battleFieldCard">
-  <div class="gradientColor"><h3>Sito ufficiale</h3></div>
-  <div class="battleFieldLogo">
-    <!-- <img src="../../assets/Logos/Battlefield-2042-logo.svg" alt="" /> -->
+<div
+  (mouseenter)="hoverFunction()"
+  (mouseleave)="outFunction()"
+  class="battleFieldCard"
+>
+  <div
+    [ngStyle]="{ opacity: opacita, transition: transizione }"
+    [ngClass]="{ gradientColor: prova === true }"
+  >
+    <h3 *ngIf="prova === true">Sito ufficiale</h3>
+  </div>
+
+  <div [ngStyle]="{ transform: translateY, transition: transitionmS }">
+    <img src="../../assets/Logos/Battlefield-2042-logo.svg" alt="" />
   </div>
 </div>

@@ -30,13 +30,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
 }
 
-.gradientColor h3 {
+h3 {
   font-size: 20px;
   font-weight: bolder;
+  color: white;
 }
 
 .battleFieldLogo {
