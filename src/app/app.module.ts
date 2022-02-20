@@ -11,6 +11,7 @@ import { AzureCardComponent } from './design-system/azure-card/azure-card.compon
 import { LightgreyCardComponent } from './design-system/lightgrey-card/lightgrey-card.component';
 import { SquareEffectCardComponent } from './design-system/square-effect-card/square-effect-card.component';
 import { SecondSectionComponent } from './second-section/second-section.component';
+import { ThirdSectionComponent } from './third-section/third-section.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SecondSectionComponent } from './second-section/second-section.componen
     LightgreyCardComponent,
     SquareEffectCardComponent,
     SecondSectionComponent,
+    ThirdSectionComponent,
   ],
   imports: [BrowserModule],
   providers: [],
