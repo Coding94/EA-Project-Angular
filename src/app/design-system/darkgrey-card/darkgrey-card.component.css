@@ -1,7 +1,7 @@
 .darkGreyCard {
   width: 350px;
   height: 200px;
-  background-image: url(../../assets/Background-images/bg-darkgrey-card.png);
+  background-image: url(../../../assets/Background-images/bg-darkgrey-card.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

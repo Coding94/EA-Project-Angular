@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-end;
 
-  background-image: url(../../assets/Background-images/MassE-bg-card.jpg);
+  background-image: url(../../../assets/Background-images/MassE-bg-card.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   transition: all 300ms ease-out;

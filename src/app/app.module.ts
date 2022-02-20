@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DesignSystemComponent } from './design-system/design-system.component';
-import { RedWhiteCardComponent } from './red-white-card/red-white-card.component';
-import { RedCardComponent } from './red-card/red-card.component';
-import { DarkgreyCardComponent } from './darkgrey-card/darkgrey-card.component';
-import { MassEffectCardComponent } from './mass-effect-card/mass-effect-card.component';
-import { AzureCardComponent } from './azure-card/azure-card.component';
-import { LightgreyCardComponent } from './lightgrey-card/lightgrey-card.component';
-import { SquareEffectCardComponent } from './square-effect-card/square-effect-card.component';
+import { RedWhiteCardComponent } from './design-system/red-white-card/red-white-card.component';
+import { RedCardComponent } from './design-system/red-card/red-card.component';
+import { DarkgreyCardComponent } from './design-system/darkgrey-card/darkgrey-card.component';
+import { MassEffectCardComponent } from './design-system/mass-effect-card/mass-effect-card.component';
+import { AzureCardComponent } from './design-system/azure-card/azure-card.component';
+import { LightgreyCardComponent } from './design-system/lightgrey-card/lightgrey-card.component';
+import { SquareEffectCardComponent } from './design-system/square-effect-card/square-effect-card.component';
 
 @NgModule({
   declarations: [

@@ -1,7 +1,7 @@
 .redCard {
   width: 350px;
   height: 145px;
-  background-image: url(../../assets/Background-images/bg-generic-card.jpg);
+  background-image: url(../../../assets/Background-images/bg-generic-card.jpg);
   background-size: cover;
   border-radius: 1px;
   top: 0px;
