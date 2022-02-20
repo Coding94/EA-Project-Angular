@@ -173,7 +173,7 @@ body {
 }
 
 .secondSection_button .bttn-two {
-  background-color: var(--background-color-transparent);
+  background-color: transparent;
   padding: 0.5em;
   border: none;
   position: relative;
@@ -189,15 +189,15 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1;
-  border: 2px solid var(--black-color);
+  border: 2px solid black;
   transition: top, left, right, bottom, 100ms ease-in-out;
   border-radius: 4px;
 }
 
 .secondSection_button .bttn-two.btnHover2:hover::before {
-  top: calc(var(--border-size) * -2);
-  left: calc(var(--border-size) * -2);
-  right: calc(var(--border-size) * -2);
-  bottom: calc(var(--border-size) * -2);
-  background-color: var(--background-color-transparent);
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: transparent;
 }
