@@ -10,6 +10,7 @@ import { MassEffectCardComponent } from './design-system/mass-effect-card/mass-e
 import { AzureCardComponent } from './design-system/azure-card/azure-card.component';
 import { LightgreyCardComponent } from './design-system/lightgrey-card/lightgrey-card.component';
 import { SquareEffectCardComponent } from './design-system/square-effect-card/square-effect-card.component';
+import { SecondSectionComponent } from './second-section/second-section.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SquareEffectCardComponent } from './design-system/square-effect-card/sq
     AzureCardComponent,
     LightgreyCardComponent,
     SquareEffectCardComponent,
+    SecondSectionComponent,
   ],
   imports: [BrowserModule],
   providers: [],
