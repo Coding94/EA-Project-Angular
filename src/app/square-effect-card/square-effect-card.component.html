@@ -3,11 +3,8 @@
   (mouseleave)="outFunction()"
   class="battleFieldCard"
 >
-  <div
-    [ngStyle]="{ opacity: opacita, transition: transizione }"
-    [ngClass]="{ gradientColor: prova === true }"
-  >
-    <h3 *ngIf="prova === true">Sito ufficiale</h3>
+  <div [ngStyle]="{ opacity: opacita }" class="gradientColor">
+    <h3 *ngIf="opacita">Sito ufficiale</h3>
   </div>
 
   <div [ngStyle]="{ transform: translateY, transition: transitionmS }">
