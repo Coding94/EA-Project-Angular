@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DesignSystemComponent } from './design-system/design-system.component';
-import { OrangeBtnComponent } from './orange-btn/orange-btn.component';
-import { TransparentBtnComponent } from './transparent-btn/transparent-btn.component';
-import { RedBtnComponent } from './red-btn/red-btn.component';
-import { PaginationBtnsComponent } from './pagination-btns/pagination-btns.component';
-import { SlideBarComponent } from './slide-bar/slide-bar.component';
-import { DropUpComponent } from './drop-up/drop-up.component';
-import { BlueFormButtonComponent } from './blue-form-button/blue-form-button.component';
-import { SocialIconsComponent } from './social-icons/social-icons.component';
-import { FormComponent } from './form/form.component';
+import { OrangeBtnComponent } from './design-system/orange-btn/orange-btn.component';
+import { TransparentBtnComponent } from './design-system/transparent-btn/transparent-btn.component';
+import { RedBtnComponent } from './design-system/red-btn/red-btn.component';
+import { PaginationBtnsComponent } from './design-system/pagination-btns/pagination-btns.component';
+import { SlideBarComponent } from './design-system/slide-bar/slide-bar.component';
+import { DropUpComponent } from './design-system/drop-up/drop-up.component';
+import { BlueFormButtonComponent } from './design-system/blue-form-button/blue-form-button.component';
+import { SocialIconsComponent } from './design-system/social-icons/social-icons.component';
+import { FormComponent } from './design-system/form/form.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,10 @@ import { FormComponent } from './form/form.component';
     DropUpComponent,
     BlueFormButtonComponent,
     SocialIconsComponent,
-    FormComponent
+    FormComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
