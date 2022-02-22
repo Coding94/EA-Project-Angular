@@ -4,9 +4,17 @@
   /* width: fit-content; */
   background-color: rgb(143, 209, 209);
 }
+
 .rightDiv {
-  height: 90%;
+  display: flex;
+  height: 100%;
   flex-grow: 1;
   /* width: fit-content; */
   background-color: rgb(185, 153, 218);
+}
+
+.ciao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

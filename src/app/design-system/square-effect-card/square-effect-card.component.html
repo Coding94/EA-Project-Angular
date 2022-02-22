@@ -1,0 +1,13 @@
+<div
+  (mouseenter)="hoverFunction()"
+  (mouseleave)="outFunction()"
+  class="battleFieldCard"
+>
+  <div [ngStyle]="{ opacity: opacita }" class="gradientColor">
+    <h3 *ngIf="opacita">Sito ufficiale</h3>
+  </div>
+
+  <div [ngStyle]="{ transform: translateY, transition: transitionmS }">
+    <img src="../../../assets/Logos/Battlefield-2042-logo.svg" alt="" />
+  </div>
+</div>
