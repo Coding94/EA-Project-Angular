@@ -1,120 +1,71 @@
 <div class="leftDiv">
   <div class="container-sm bg-secondary flex-row-space">
-    <!-- Buttons -->
-
-    <div class="rel-pos">
-      <button
-        class="bttn btnHover btnSize"
-        onclick="location.href='www.google.it'"
+    <div class="disFlex">
+      <div>
+        <ea-orange-btn></ea-orange-btn>
+        <ea-transparent-btn></ea-transparent-btn>
+        <ea-red-btn></ea-red-btn>
+      </div>
+      <div
+        class="flex"
+        style="justify-content: space-around; align-items: center"
       >
-        Orange Button
-      </button>
-      <button class="bttn-two btnHover2 btnSize">Transparent Button</button>
-      <button
-        class="bttn-three btnHover3 btnSize"
-        onclick="location.href='www.google.it'"
-      >
-        Red Button
-      </button>
-    </div>
-    <div class="secondDivContainer">
-      <!-- Pagination -->
-
-      <div class="paginationBttns">
-        <div class="previousBttn">Indietro</div>
-        <div class="numbersBttn">
-          <span class="firstSpan">1</span><span class="secondSpan">2</span>
-        </div>
-        <div class="nextBttn">Successivo</div>
-      </div>
-
-      <!-- ScrollBar -->
-      <div class="scrollBarPers">
-        <div class="leftBttn"><</div>
-        <div class="scrollBarBttn">
-          <div class="scrollBarBttnNav"></div>
-        </div>
-        <div class="rightBttn">></div>
-      </div>
-
-      <!-- DropUp -->
-
-      <div class="btn-group dropup dropPers">
-        <button
-          type="button"
-          class="btn dropdown-toggle dropPers"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          style="height: 50px; width: 180px"
-        >
-          Dropup
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-chevron-down"
-            viewBox="0 0 16 16"
-            style="margin-left: 60px"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </button>
-        <ul class="dropdown-menu">
-          <div class="flex-row">
-            <li>
-              <div class="flex">
-                <div>ciao1</div>
-                <div>ciao2</div>
-                <div>ciao3</div>
-                <div>ciao4</div>
-                <div>ciao5</div>
-                <div>ciao6</div>
-                <div>ciao7</div>
-                <div>ciao8</div>
-                <div>ciao9</div>
-                <div>ciao10</div>
-              </div>
-            </li>
-            <li>
-              <div class="flex">
-                <div>ciao1</div>
-                <div>ciao2</div>
-                <div>ciao3</div>
-                <div>ciao4</div>
-                <div>ciao5</div>
-                <div>ciao6</div>
-                <div>ciao7</div>
-                <div>ciao8</div>
-                <div>ciao9</div>
-                <div>ciao10</div>
-              </div>
-            </li>
-            <li>
-              <div class="flex">
-                <div>ciao1</div>
-                <div>ciao2</div>
-                <div>ciao3</div>
-                <div>ciao4</div>
-                <div>ciao5</div>
-                <div>ciao6</div>
-                <div>ciao7</div>
-                <div>ciao8</div>
-                <div>ciao9</div>
-                <div>ciao10</div>
-              </div>
-            </li>
-          </div>
-        </ul>
+        <ea-pagination-btns></ea-pagination-btns>
+        <ea-slide-bar></ea-slide-bar>
+        <ea-drop-up></ea-drop-up>
       </div>
     </div>
-    <div class="d-grid gap-2 col-6 mx-auto my-5 bttnAlignCenter">
-      <button class="btn btn-primary bttnBlueSize" type="button">Button</button>
-    </div>
+    <ea-blue-form-button></ea-blue-form-button>
     <div class="titleComponent">Button Styles</div>
   </div>
+  <div class="d-flex">
+    <div class="colorsPers bg-secondary">
+      <div style="background-color: #ff4747"></div>
+      <div style="background-color: #161616"></div>
+      <div style="background-color: #ffffff"></div>
+      <div style="background-color: #eaeaea"></div>
+      <span class="titleComponent">Colors</span>
+    </div>
+    <ea-social-icons></ea-social-icons>
+  </div>
+  <div class="headersAndLogos">
+    <div class="headers bg-secondary">
+      <h1>Headers</h1>
+      <h2>Headers</h2>
+      <h4>Headers</h4>
+      <h5>Headers</h5>
+      <span class="titleComponent">Typhography</span>
+    </div>
+    <div class="logos bg-secondary">
+      <div style="margin-bottom: 80px; margin-right: 20px">
+        <img
+          src="assets/design-system/Logos/EA-Play-logo.svg"
+          alt=""
+          width="250"
+        />
+        <img
+          src="assets/design-system/Logos/EA-Logo.svg"
+          alt=""
+          width="35"
+          style="margin-left: 20px"
+        />
+      </div>
+      <div style="position: absolute; bottom: 30px; left: 10px">
+        <img
+          src="assets/design-system/Logos/ElectronicArts.svg"
+          alt=""
+          width="180"
+        />
+        <img
+          src="assets/design-system/Logos/EA-red-logo.png"
+          alt=""
+          width="60"
+          style="margin-left: 60px; margin-bottom: 15px"
+        />
+      </div>
+      <span class="titleComponent">Logos</span>
+    </div>
+  </div>
+  <ea-form></ea-form>
 </div>
 <div class="rightDiv"></div>
