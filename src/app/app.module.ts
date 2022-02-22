@@ -12,6 +12,7 @@ import { LightgreyCardComponent } from './design-system/lightgrey-card/lightgrey
 import { SquareEffectCardComponent } from './design-system/square-effect-card/square-effect-card.component';
 import { SecondSectionComponent } from './second-section/second-section.component';
 import { ThirdSectionComponent } from './third-section/third-section.component';
+import { ListComponentComponent } from './list-component/list-component.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ThirdSectionComponent } from './third-section/third-section.component';
     SquareEffectCardComponent,
     SecondSectionComponent,
     ThirdSectionComponent,
+    ListComponentComponent,
   ],
   imports: [BrowserModule],
   providers: [],
