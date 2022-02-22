@@ -1,0 +1,41 @@
+.rel-pos {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.btnSize {
+  height: 60px;
+  width: 168px;
+  margin: 10px;
+}
+
+.bttn {
+  background-color: transparent;
+  padding: 0.5em;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bttn.btnHover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 2px solid black;
+  transition: all 100ms ease-in-out;
+  border-radius: 4px;
+}
+
+.bttn.btnHover:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: transparent;
+}

@@ -1,0 +1,44 @@
+.dropPers {
+  background-color: white;
+  border-radius: 0;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.dropup .dropdown-toggle::after {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+}
+
+.flex div {
+  margin-right: 35px;
+  margin-left: 20px;
+  height: 39px;
+  width: 150px;
+  /* padding: 8px; */
+  border-bottom: 1px solid lightgray;
+  transition: linear 500ms;
+}
+
+.flex div:hover {
+  padding-left: 20px;
+  transition: linear 500ms;
+}
+
+.flex div:last-child {
+  border: none;
+}
