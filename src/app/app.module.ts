@@ -25,7 +25,6 @@ import { SecondSectionComponent } from './second-section/second-section.componen
 import { ThirdSectionComponent } from './third-section/third-section.component';
 import { ListComponentComponent } from './list-component/list-component.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,13 +47,10 @@ import { ListComponentComponent } from './list-component/list-component.componen
     AzureCardComponent,
     LightgreyCardComponent,
     SquareEffectCardComponent,
-<<<<<<< HEAD
 
-=======
     SecondSectionComponent,
     ThirdSectionComponent,
     ListComponentComponent,
->>>>>>> feat/Giulio/Ea-angular-section
   ],
   imports: [BrowserModule],
   providers: [],
