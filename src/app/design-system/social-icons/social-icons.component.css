@@ -14,6 +14,7 @@
 .socialSvgs div:hover {
   transform: scale(1.4);
   transition: linear 200ms;
+  cursor: pointer;
 }
 .socialAndMainColors {
   display: flex;
@@ -22,7 +23,7 @@
 }
 .titleComponent {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   right: 20px;
   color: white;
   font-weight: bolder;

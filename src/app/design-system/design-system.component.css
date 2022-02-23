@@ -2,6 +2,7 @@
 
 * {
   font-family: "Outfit", sans-serif;
+  box-sizing: content-box;
 }
 
 .contenitore {
@@ -10,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   background: linear-gradient(181deg, violet, black);
 }
 .leftDiv {
@@ -28,7 +29,7 @@
 }
 
 .d-flex {
-  gap: 20px;
+  gap: 30px;
 }
 
 .disFlex {
@@ -38,7 +39,7 @@
 }
 .titleComponent {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   right: 20px;
   color: white;
   font-weight: bolder;
@@ -65,7 +66,7 @@
   flex-wrap: wrap;
   position: relative;
   border-radius: 8px;
-  width: 700px;
+  width: 685px;
 }
 
 .headers {
@@ -86,7 +87,7 @@
 }
 .headers .titleComponent {
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   right: 10px;
   color: white;
   font-weight: bolder;
@@ -106,7 +107,7 @@
 .headersAndLogos {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
 .ciao {
@@ -117,4 +118,5 @@
 .rounded-5 {
   border-radius: 8px;
   height: fit-content;
+  position: relative;
 }
