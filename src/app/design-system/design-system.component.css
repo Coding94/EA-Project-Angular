@@ -120,3 +120,13 @@
   height: fit-content;
   position: relative;
 }
+
+.socialSvgs {
+  height: 150px;
+  width: 340px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
