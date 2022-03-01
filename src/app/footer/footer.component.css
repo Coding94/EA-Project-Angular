@@ -106,7 +106,7 @@
     background-color: white;
     border-radius: 0;
     color: black;
-    font-weight: bolder;
+
   }
   .btn-check:focus + .btn,
   .btn:focus {
@@ -124,8 +124,7 @@
   }
   
   .language-link>div{
-    display: flex;
-    justify-content: space-between;
+    color: #161616;
     width: 200px !important;
   }
   .language-link>div:first-child{
@@ -147,16 +146,10 @@
   .flex-row {
     display: flex;
     gap: 45px;
+    margin-left: 45px;
+    font-size: 15px;
   }
-  .flex div {
-    /* margin-right: -25px;
-    margin-left: 20px; */
-    height: 39px;
-    width: 150px;
-    /* padding: 8px; */
-    border-bottom: 1px solid lightgray;
-    transition: linear 500ms;
-  }
+
   .flex div:hover {
     padding-left: 20px;
     transition: linear 500ms;
