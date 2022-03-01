@@ -6,3 +6,11 @@
   justify-content: center;
   gap: 20px;
 }
+.ciao3 {
+  height: 100vh;
+  width: 100vw;
+}
+.d-flex {
+  height: 100%;
+  width: 100%;
+}
