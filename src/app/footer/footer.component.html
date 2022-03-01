@@ -1,4 +1,3 @@
-<!-- Footer -->
 <footer class="footer">
     <div class="footer-up">
       <div class="footer-up-menu">
@@ -63,42 +62,159 @@
                 <li>
                   <div class="flex">
                     <a href="#" class="language-link">
-                     <div>
-                        <img src="/assets/footer_imgs/Flags/US.png"> United States 
-                        <img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="US" width="15px"> 
+                     <div (click)="clickEvent('US')">
+                       <img src="/assets/footer_imgs/Flags/US.png" alt="US"> United States 
+                        <img *ngIf="status=='US'" src="\assets\footer_imgs/spunta-menú-dropup.svg" width="15px"> 
                      </div>
                     </a>
-                    <a href="#" class="language-link"><div><img src="/assets/footer_imgs/Flags/UK.png"> United Kingdom <img class="spunta-off"  src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="UK" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/AU.png"> Australia<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="AU" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/FR.png"> France<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="FR" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/DE.png"> Deutschland<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DE" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/IT.png"> Italia<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="IT" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/JP.png"> 日本<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="JP" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/PL.png"> Polska<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="PL" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/BR.png"> Brasil<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="BR" width="15px"></div></a>
+                    <div>
+                    </div>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('UK')">
+                        <img src="/assets/footer_imgs/Flags/UK.png"> United Kingdom 
+                        <img *ngIf="status=='UK'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="UK" width="15px">
+                    </div>
+                  </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('AU')">
+                        <img src="\assets\footer_imgs/Flags/AU.png"> Australia
+                        <img *ngIf="status=='AU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="AU" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('FR')">
+                        <img src="\assets\footer_imgs/Flags/FR.png"> France
+                        <img *ngIf="status=='FR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="FR" width="15px">
+                    </div>
+                  </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('DE')">
+                        <img src="\assets\footer_imgs/Flags/DE.png"> Deutschland
+                      <img *ngIf="status=='DE'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DE" width="15px">
+                    </div>
+                  </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('IT')">
+                        <img src="\assets\footer_imgs/Flags/IT.png"> Italia
+                        <img *ngIf="status=='IT'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="IT" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('JP')">
+                        <img src="\assets\footer_imgs/Flags/JP.png"> 日本
+                        <img *ngIf="status=='JP'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="JP" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('PL')">
+                        <img src="\assets\footer_imgs/Flags/PL.png"> Polska
+                        <img *ngIf="status=='PL'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="PL" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('BR')">
+                        <img src="\assets\footer_imgs/Flags/BR.png"> Brasil
+                        <img *ngIf="status=='BR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="BR" width="15px">
+                      </div>
+                    </a>
                   </div>
                 </li>
                 <li>
                   <div class="flex">
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/RU.png"> Россия<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="RU" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/ES.png"> España<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ES" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/CR.png"> Česká republika<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CR" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/CN.png"> Canada (En)<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/CN.png"> Canada (Fr)<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/DN.png"> Danmark<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DN" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/SU.png"> Suomi<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SU" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/ME.png"> México<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ME" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/NE.png"> Nederland<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NE" width="15px"></div></a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('RU')">
+                        <img src="\assets\footer_imgs/Flags/RU.png"> Россия
+                        <img *ngIf="status=='RU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="RU" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('ES')">
+                        <img src="\assets\footer_imgs/Flags/ES.png"> España
+                        <img *ngIf="status=='ES'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ES" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('CR')">
+                        <img src="\assets\footer_imgs/Flags/CR.png"> Česká republika
+                        <img *ngIf="status=='CR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CR" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('CN')">
+                        <img src="\assets\footer_imgs/Flags/CN.png"> Canada (En)
+                        <img *ngIf="status=='CN'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('CN1')">
+                        <img src="\assets\footer_imgs/Flags/CN.png"> Canada (Fr)
+                        <img *ngIf="status=='CN1'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('DN')">
+                        <img src="\assets\footer_imgs/Flags/DN.png"> Danmark
+                        <img *ngIf="status=='DN'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DN" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('SU')">
+                        <img src="\assets\footer_imgs/Flags/SU.png"> Suomi
+                        <img *ngIf="status=='SU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SU" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('ME')">
+                        <img src="\assets\footer_imgs/Flags/ME.png"> México
+                        <img *ngIf="status=='ME'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ME" width="15px">
+                      </div>
+                      </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('NE')">
+                        <img src="\assets\footer_imgs/Flags/NE.png"> Nederland
+                        <img *ngIf="status=='NE'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NE" width="15px">
+                      </div>
+                      </a>
                   </div>
                 </li>
                 <li>
                   <div class="flex">
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/NO.png"> Norge<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NO" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/SV.png"> Sverige<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/SV.png">中国<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/SK.png"> 대한민국<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SK" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/SV.png">繁體中文<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px"></div></a>
-                    <a href="#" class="language-link"><div><img src="\assets\footer_imgs/Flags/TU.png"> Türkiye<img class="spunta-off" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="TU" width="15px"></div></a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('NO')">
+                        <img src="\assets\footer_imgs/Flags/NO.png"> Norge
+                        <img *ngIf="status=='NO'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NO" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('SV')">
+                        <img src="\assets\footer_imgs/Flags/SV.png"> Sverige
+                        <img *ngIf="status=='SV'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('SV1')">
+                        <img src="\assets\footer_imgs/Flags/SV.png">中国
+                        <img *ngIf="status=='SV1'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('SK')">
+                        <img src="\assets\footer_imgs/Flags/SK.png"> 대한민국
+                        <img *ngIf="status=='SK'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SK" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('SV2')">
+                        <img src="\assets\footer_imgs/Flags/SV.png">繁體中文
+                        <img *ngIf="status=='SV2'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+                      </div>
+                    </a>
+                    <a href="#" class="language-link">
+                      <div (click)="clickEvent('TU')">
+                        <img src="\assets\footer_imgs/Flags/TU.png"> Türkiye
+                        <img *ngIf="status=='TU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="TU" width="15px">
+                      </div>
+                    </a>
                   </div>
                 </li>
               </div>
@@ -132,25 +248,3 @@
   </div>
 
   </footer>
-  <!-- Fine Footer -->
-
-<script>
-
-// let elemento = document.querySelectorAll(".language-link")
-// elemento.forEach(el => {
-//   el.addEventListener("click",(event)=>{
-//     let x = event.target.firstElementChild.nextElementSibling
-//     console.log(event.target)
-//     elemento.forEach((el2) => {
-//       let y = el2.firstElementChild.firstElementChild.nextElementSibling
-//       console.log(el2)
-//       y.classList.remove("spunta-on")
-//       y.classList.add("spunta-off")
-//       //  console.log(y)
-//     })
-//     x.classList.remove("spunta-off")
-//     x.classList.add("spunta-on");
-//   })
-// });
-
-// </script>
