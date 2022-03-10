@@ -21,6 +21,9 @@ import { MassEffectCardComponent } from './design-system/mass-effect-card/mass-e
 import { AzureCardComponent } from './design-system/azure-card/azure-card.component';
 import { LightgreyCardComponent } from './design-system/lightgrey-card/lightgrey-card.component';
 import { SquareEffectCardComponent } from './design-system/square-effect-card/square-effect-card.component';
+import { MainHeaderComponent } from './main-header/main-header.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FirstSectionComponent } from './first-section/first-section.component';
 
 
 @NgModule({
@@ -45,6 +48,9 @@ import { SquareEffectCardComponent } from './design-system/square-effect-card/sq
     AzureCardComponent,
     LightgreyCardComponent,
     SquareEffectCardComponent,
+    MainHeaderComponent,
+    NavBarComponent,
+    FirstSectionComponent,
 
   ],
   imports: [BrowserModule],

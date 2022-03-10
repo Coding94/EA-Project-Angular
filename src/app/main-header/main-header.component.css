@@ -1,0 +1,95 @@
+:root {
+  --background-color-orange: #f56c2c;
+  --background-color-red: #ff4747;
+  --background-color-transparent: transparent;
+  --border-size: 2px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainHeader {
+  position: relative;
+  overflow: visible;
+  height: fit-content;
+  padding-top: 40px;
+}
+
+.mainHeader .headerDiv {
+  min-width: 100%;
+  min-height: 40px;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.mainHeader .icons {
+  background-color: transparent;
+  max-height: 20px;
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainHeader .icons div {
+  cursor: pointer;
+  display: block;
+  fill: darkgray;
+  background-color: transparent;
+}
+
+.mainHeader .icons > div > svg {
+  width: 20px;
+  height: 20px;
+}
+.icons div svg:hover {
+  filter: brightness(150%);
+}
+
+.mainHeader .navBar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* margin-top: 40px; */
+  /* border: 1px solid red; */
+  z-index: 4;
+}
+.mainHeader .navBarDots {
+  height: 19px;
+  width: fit-content;
+  margin-left: 20px;
+  transition: linear 0.2s;
+  margin-bottom: 13px;
+}
+.divAlignLeft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.divLinks {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+}
+.divLinks div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eaImg {
+  padding: 0 30px;
+}
+
+.divLinks div svg {
+  margin-left: 10px;
+}
