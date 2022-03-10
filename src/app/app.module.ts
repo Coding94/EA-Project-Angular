@@ -25,6 +25,9 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FirstSectionComponent } from './first-section/first-section.component';
 
+import { SecondSectionComponent } from './second-section/second-section.component';
+import { ThirdSectionComponent } from './third-section/third-section.component';
+import { ListComponentComponent } from './list-component/list-component.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { FirstSectionComponent } from './first-section/first-section.component';
     NavBarComponent,
     FirstSectionComponent,
 
+    SecondSectionComponent,
+    ThirdSectionComponent,
+    ListComponentComponent,
   ],
   imports: [BrowserModule],
   providers: [],
