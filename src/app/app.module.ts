@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DesignSystemComponent } from './design-system/design-system.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { OrangeBtnComponent } from './design-system/orange-btn/orange-btn.component';
 import { TransparentBtnComponent } from './design-system/transparent-btn/transparent-btn.component';
@@ -58,6 +59,7 @@ import { ListComponentComponent } from './list-component/list-component.componen
     SecondSectionComponent,
     ThirdSectionComponent,
     ListComponentComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
