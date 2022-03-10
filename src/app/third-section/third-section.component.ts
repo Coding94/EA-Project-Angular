@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'ea-third-section',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./third-section.component.css']
 })
 export class ThirdSectionComponent implements OnInit {
+  
 
   constructor() { }
 

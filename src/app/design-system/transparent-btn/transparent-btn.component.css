@@ -8,6 +8,7 @@
   height: 60px;
   width: 168px;
   margin: 10px;
+  
 }
 
 .bttn {
@@ -39,3 +40,22 @@
   bottom: calc(2px * -2);
   background-color: transparent;
 }
+
+.bttn.classeNuova {
+  color:white;
+}
+
+.bttn.classeNuova::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: 2px solid white;
+  color:white;
+  transition: all 100ms ease-in-out;
+  border-radius: 4px;
+}
+
