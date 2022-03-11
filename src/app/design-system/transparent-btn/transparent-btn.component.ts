@@ -1,17 +1,14 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ea-transparent-btn',
   templateUrl: './transparent-btn.component.html',
-  styleUrls: ['./transparent-btn.component.css']
+  styleUrls: ['./transparent-btn.component.css'],
 })
 export class TransparentBtnComponent implements OnInit {
-  
-  @Input() rename!:string;
+  @Input() rename!: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

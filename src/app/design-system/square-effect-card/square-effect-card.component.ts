@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ea-square-effect-card',
@@ -9,6 +9,10 @@ export class SquareEffectCardComponent implements OnInit {
   translateY: string = '';
   transitionmS: string = '';
   opacita: number = 0;
+
+  @Input() logoPath!: string;
+  @Input() widthLogo: string = '150';
+  @Input() bgCard!: string;
 
   constructor() {}
 
