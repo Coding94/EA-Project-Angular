@@ -23,7 +23,7 @@
 }
 
 .bgImg .bttn-two {
-  background-color: var(--background-color-transparent);
+  background-color:transparent;
   padding: 0.5em;
   border: none;
   position: absolute;
@@ -50,23 +50,18 @@
   border-radius: 4px;
 }
 .bgImg .bttn-two.btnHover2:hover::before {
-  top: calc(var(--border-size) * -2);
-  left: calc(var(--border-size) * -2);
-  right: calc(var(--border-size) * -2);
-  bottom: calc(var(--border-size) * -2);
-  background-color: var(--background-color-transparent);
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: transparent;
 }
 
 .firstSection {
   margin: 4% 0;
 }
 
-:root {
-  --background-color-orange: #f56c2c;
-  --background-color-red: #ff4747;
-  --background-color-transparent: transparent;
-  --border-size: 2px;
-}
+
 
 .classFlex {
   display: flex;
@@ -98,7 +93,7 @@
 }
 
 .bttn-two {
-  background-color: var(--background-color-transparent);
+  background-color: transparent;
   padding: 0.5em;
   border: none;
   position: relative;
@@ -122,11 +117,11 @@
 }
 
 .bttn-two.btnHover2:hover::before {
-  top: calc(var(--border-size) * -2);
-  left: calc(var(--border-size) * -2);
-  right: calc(var(--border-size) * -2);
-  bottom: calc(var(--border-size) * -2);
-  background-color: var(--background-color-transparent);
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+  background-color: transparent;
 }
 
 .battleFieldCard {
