@@ -11,5 +11,9 @@ export class DropUpComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  countryCode: string = "IT";
+  countryCodeSelector(lang:string){
+      this.countryCode = lang;       
+  }
 
 }
