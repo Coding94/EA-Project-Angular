@@ -1,69 +1,283 @@
 <div class="btn-group dropup dropPers">
-  <button
-    type="button"
-    class="btn dropdown-toggle dropPers"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-    style="height: 50px; width: 180px"
-  >
-    Dropup
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="bi bi-chevron-down"
-      viewBox="0 0 16 16"
-      style="margin-left: 60px"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-      />
-    </svg>
+  <button type="button" class="btn dropdown-toggle dropPers d-flex justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
+  <div *ngIf="countryCode=='IT'" >
+    <img src="\assets\footer_imgs/Flags/IT.png" alt="IT-Flag">
+      Italia
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='US'" >
+    <img src="\assets\footer_imgs/Flags/US.png" alt="US-Flag">
+      United States
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 20px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='UK'" >
+    <img src="\assets\footer_imgs/Flags/UK.png" alt="UK-Flag">
+      United Kingdom
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 5px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='AU'" >
+    <img src="\assets\footer_imgs/Flags/AU.png" alt="AU-Flag">
+      Australia
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='FR'" >
+    <img src="\assets\footer_imgs/Flags/FR.png" alt="FR-Flag">
+      France
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='DE'" >
+    <img src="\assets\footer_imgs/Flags/DE.png" alt="DE-Flag">
+      Deutschland
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 10px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='JP'" >
+    <img src="\assets\footer_imgs/Flags/JP.png" alt="JP-Flag">
+      日本
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='PL'" >
+    <img src="\assets\footer_imgs/Flags/PL.png" alt="PL-Flag">
+      Polska
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='BR'" >
+    <img src="\assets\footer_imgs/Flags/BR.png" alt="BR-Flag">
+      Brasil
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='RU'" >
+    <img src="\assets\footer_imgs/Flags/RU.png" alt="RU-Flag">
+      Россия
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='ES'" >
+    <img src="\assets\footer_imgs/Flags/ES.png" alt="ES-Flag">
+      España
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='CR'" >
+    <img src="\assets\footer_imgs/Flags/CR.png" alt="CR-Flag">
+      Česká republika 
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 5px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='CN'" >
+    <img src="\assets\footer_imgs/Flags/CN.png" alt="CN-Flag">
+      Canada (EN)
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 20px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='CN1'" >
+    <img src="\assets\footer_imgs/Flags/CN.png" alt="CN-Flag">
+      Canada (FR)
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 20px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='DN'" >
+    <img src="\assets\footer_imgs/Flags/DN.png" alt="DN-Flag">
+      Danmark
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='SU'" >
+    <img src="\assets\footer_imgs/Flags/SU.png" alt="SU-Flag">
+      Suomi
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='ME'" >
+    <img src="\assets\footer_imgs/Flags/ME.png" alt="ME-Flag">
+      México
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='NE'" >
+    <img src="\assets\footer_imgs/Flags/NE.png" alt="NE-Flag">
+    Nederland
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 20px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='NO'" >
+    <img src="\assets\footer_imgs/Flags/NO.png" alt="NO-Flag">
+    Norge
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='SV'" >
+    <img src="\assets\footer_imgs/Flags/SV.png" alt="SV-Flag">
+    Sverige
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='CH'" >
+    <img src="\assets\footer_imgs/Flags/CH.png" alt="CH-Flag">
+    中国
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='SK'" >
+    <img src="\assets\footer_imgs/Flags/SK.png" alt="SK-Flag">
+    대한민국
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='CH1'" >
+    <img src="\assets\footer_imgs/Flags/CH.png" alt="CH-Flag">
+    繁體中文
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
+  <div *ngIf="countryCode=='TU'" >
+    <img src="\assets\footer_imgs/Flags/TU.png" alt="TU-Flag">
+    Türkiye
+    <img src="\assets\design-system\other-icons\arrows-bottom.svg" alt="arrows-bottom" style="margin-left: 50px;" width="30px">
+  </div>
   </button>
+
   <ul class="dropdown-menu">
     <div class="flex-row">
       <li>
         <div class="flex">
-          <div>ciao1</div>
-          <div>ciao2</div>
-          <div>ciao3</div>
-          <div>ciao4</div>
-          <div>ciao5</div>
-          <div>ciao6</div>
-          <div>ciao7</div>
-          <div>ciao8</div>
-          <div>ciao9</div>
-          <div>ciao10</div>
+          <a href="#" class="language-link">
+           <div (click)="countryCodeSelector('US')">
+              <img src="/assets/footer_imgs/Flags/US.png" alt="US"> United States 
+              <img *ngIf="countryCode=='US'" src="\assets\footer_imgs/spunta-menú-dropup.svg" width="15px"> 
+           </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('UK')">
+              <img src="/assets/footer_imgs/Flags/UK.png"> United Kingdom 
+              <img *ngIf="countryCode=='UK'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="UK" width="15px">
+          </div>
+        </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('AU')">
+              <img src="\assets\footer_imgs/Flags/AU.png"> Australia
+              <img *ngIf="countryCode=='AU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="AU" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('FR')">
+              <img src="\assets\footer_imgs/Flags/FR.png"> France
+              <img *ngIf="countryCode=='FR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="FR" width="15px">
+          </div>
+        </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('DE')">
+              <img src="\assets\footer_imgs/Flags/DE.png"> Deutschland
+            <img *ngIf="countryCode=='DE'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DE" width="15px">
+          </div>
+        </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('IT')">
+              <img src="\assets\footer_imgs/Flags/IT.png"> Italia
+              <img *ngIf="countryCode=='IT'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="IT" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('JP')">
+              <img src="\assets\footer_imgs/Flags/JP.png"> 日本
+              <img *ngIf="countryCode=='JP'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="JP" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('PL')">
+              <img src="\assets\footer_imgs/Flags/PL.png"> Polska
+              <img *ngIf="countryCode=='PL'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="PL" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('BR')">
+              <img src="\assets\footer_imgs/Flags/BR.png"> Brasil
+              <img *ngIf="countryCode=='BR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="BR" width="15px">
+            </div>
+          </a>
         </div>
       </li>
       <li>
         <div class="flex">
-          <div>ciao1</div>
-          <div>ciao2</div>
-          <div>ciao3</div>
-          <div>ciao4</div>
-          <div>ciao5</div>
-          <div>ciao6</div>
-          <div>ciao7</div>
-          <div>ciao8</div>
-          <div>ciao9</div>
-          <div>ciao10</div>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('RU')">
+              <img src="\assets\footer_imgs/Flags/RU.png"> Россия
+              <img *ngIf="countryCode=='RU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="RU" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('ES')">
+              <img src="\assets\footer_imgs/Flags/ES.png"> España
+              <img *ngIf="countryCode=='ES'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ES" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('CR')">
+              <img src="\assets\footer_imgs/Flags/CR.png"> Česká republika
+              <img *ngIf="countryCode=='CR'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CR" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('CN')">
+              <img src="\assets\footer_imgs/Flags/CN.png"> Canada (En)
+              <img *ngIf="countryCode=='CN'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('CN1')">
+              <img src="\assets\footer_imgs/Flags/CN.png"> Canada (Fr)
+              <img *ngIf="countryCode=='CN1'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="CN" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('DN')">
+              <img src="\assets\footer_imgs/Flags/DN.png"> Danmark
+              <img *ngIf="countryCode=='DN'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="DN" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('SU')">
+              <img src="\assets\footer_imgs/Flags/SU.png"> Suomi
+              <img *ngIf="countryCode=='SU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SU" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('ME')">
+              <img src="\assets\footer_imgs/Flags/ME.png"> México
+              <img *ngIf="countryCode=='ME'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="ME" width="15px">
+            </div>
+            </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('NE')">
+              <img src="\assets\footer_imgs/Flags/NE.png"> Nederland
+              <img *ngIf="countryCode=='NE'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NE" width="15px">
+            </div>
+            </a>
         </div>
       </li>
       <li>
         <div class="flex">
-          <div>ciao1</div>
-          <div>ciao2</div>
-          <div>ciao3</div>
-          <div>ciao4</div>
-          <div>ciao5</div>
-          <div>ciao6</div>
-          <div>ciao7</div>
-          <div>ciao8</div>
-          <div>ciao9</div>
-          <div>ciao10</div>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('NO')">
+              <img src="\assets\footer_imgs/Flags/NO.png"> Norge
+              <img *ngIf="countryCode=='NO'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="NO" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('SV')">
+              <img src="\assets\footer_imgs/Flags/SV.png"> Sverige
+              <img *ngIf="countryCode=='SV'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('CH')">
+              <img src="\assets\footer_imgs/Flags/CH.png">中国
+              <img *ngIf="countryCode=='CH'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('SK')">
+              <img src="\assets\footer_imgs/Flags/SK.png"> 대한민국
+              <img *ngIf="countryCode=='SK'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SK" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('CH1')">
+              <img src="\assets\footer_imgs/Flags/CH.png">繁體中文
+              <img *ngIf="countryCode=='CH1'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="SV" width="15px">
+            </div>
+          </a>
+          <a href="#" class="language-link">
+            <div (click)="countryCodeSelector('TU')">
+              <img src="\assets\footer_imgs/Flags/TU.png"> Türkiye
+              <img *ngIf="countryCode=='TU'" src="\assets\footer_imgs/spunta-menú-dropup.svg" alt="TU" width="15px">
+            </div>
+          </a>
         </div>
       </li>
     </div>

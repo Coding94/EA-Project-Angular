@@ -11,5 +11,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  status: string = "";
+  clickEvent(lang:string){
+      this.status = lang;       
+  }
 }
