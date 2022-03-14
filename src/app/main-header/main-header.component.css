@@ -1,9 +1,4 @@
-:root {
-  --background-color-orange: #f56c2c;
-  --background-color-red: #ff4747;
-  --background-color-transparent: transparent;
-  --border-size: 2px;
-}
+
 
 * {
   box-sizing: border-box;
@@ -18,7 +13,7 @@
   padding-top: 40px;
 }
 
-.mainHeader .headerDiv {
+.headerDiv {
   min-width: 100%;
   min-height: 40px;
   background-color: #161616;
@@ -30,7 +25,7 @@
   left: 0;
   z-index: 3;
 }
-.mainHeader .icons {
+ .icons {
   background-color: transparent;
   max-height: 20px;
   width: 200px;
@@ -39,14 +34,13 @@
   justify-content: space-around;
   align-items: center;
 }
-.mainHeader .icons div {
+.icons div {
   cursor: pointer;
   display: block;
   fill: darkgray;
   background-color: transparent;
 }
-
-.mainHeader .icons > div > svg {
+.icons > div > svg {
   width: 20px;
   height: 20px;
 }
@@ -54,7 +48,7 @@
   filter: brightness(150%);
 }
 
-.mainHeader .navBar {
+ .navBar {
   height: 50px;
   display: flex;
   align-items: center;
@@ -62,7 +56,7 @@
   /* border: 1px solid red; */
   z-index: 4;
 }
-.mainHeader .navBarDots {
+.navBarDots {
   height: 19px;
   width: fit-content;
   margin-left: 20px;
