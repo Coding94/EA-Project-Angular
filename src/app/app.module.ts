@@ -29,6 +29,8 @@ import { FirstSectionComponent } from './first-section/first-section.component';
 import { SecondSectionComponent } from './second-section/second-section.component';
 import { ThirdSectionComponent } from './third-section/third-section.component';
 import { ListComponentComponent } from './list-component/list-component.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,8 @@ import { ListComponentComponent } from './list-component/list-component.componen
     ThirdSectionComponent,
     ListComponentComponent,
     FooterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
