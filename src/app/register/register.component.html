@@ -6,9 +6,10 @@
             <p>Basterà seguire pochi passaggi per completare il tuo account EA (è veloce, promesso).</p>
         </div>
         <div class="formCont">
-            <form action="">
+            <form action="" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate  >
             <label for="">Paese/regione</label>
-            <select id="country" name="country" class="form-control">
+            <select id="country" name="country" class="form-control"  ngModel required>
+                <option value="" disabled selected hidden>Seleziona il paese</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -256,7 +257,7 @@
             </select>
             <label id="date_of_birth">data di nascita<br /> </label>
                 <div class="dobContainer">
-                    <select class="first" name="date_of_birth:day" class="form-control" tabindex="7">
+                    <select class="first" name="date_of_birth:day" class="form-control" tabindex="7" ngModel required>
                         <option value="">
                         <!-- -->
                         Giorno</option>
@@ -292,7 +293,7 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <select name="date_of_birth:mon" class="form-control " tabindex="8">
+                    <select name="date_of_birth:mon" class="form-control " tabindex="8"  ngModel required>
                         <option value="">
                         <!-- -->
                         Mese</option>
@@ -309,7 +310,7 @@
                         <option value="11">Novembre</option>
                         <option value="12">Dicembre</option>
                     </select>
-                    <select name="date_of_birth:year" class="form-control" tabindex="9">
+                    <select name="date_of_birth:year" class="form-control" tabindex="9"ngModel required>
                         <option value="">
                         <!-- -->
                         Anno</option>
@@ -439,20 +440,23 @@
                 </div>
     
             
-            <div>
-                <ea-blue-form-button [disable]="validity"[buttonLabel]="'Avanti'"></ea-blue-form-button>
-            </div>
+                <div class="d-grid gap-2 col-6 mx-auto my-5 bttnAlignCenter">
+                    <button  class="btn btn-primary bttnBlueSize" [disabled]="!f.valid" type="button">AVANTI</button>
+                  </div>
+
         </form>
         </div>
-        <div>
-            <p class="separator">oppure prosegui con</p>
+        <div class="separatorcont">
+            <div class="leftsep"></div>
+            <div class="separator">oppure prosegui con</div>
+            <div class="rightsep"></div>
         </div>
         <div class="social-login-logos">
             <div >        
                 <a href=""><img class="socialIcons" src="assets\Social_login_icons\facebook.png" alt="Facebook" width="50"height="50"></a>
             </div>
             <div>        
-                <a href=""><img class="socialIcons"src="assets\Social_login_icons\apple.svg" alt="Apple" width="50"height="50"></a>
+                <a href=""><img class="socialIcons"src="assets\Social_login_icons\apple.jpg" alt="Apple" width="50"height="50"></a>
             </div>
             <div>        
                 <a href=""><img class="socialIcons"src="assets\Social_login_icons\steam.jpg" alt="Steam"width="50"height="50"></a>
@@ -464,7 +468,7 @@
                 <a href=""><img class="socialIcons"src="assets\Social_login_icons\psn.jpg" alt="PSN"width="50" height="50"></a>
             </div>    
         </div>
-        <span>Hai giá un account?<a href=""> Accedi</a></span>
+        <span>Hai giá un account? <a href="">Accedi</a></span>
         <span><a href="">Vuoi creare un account EA per tuo figlio?</a></span>
     </div>
 </div>

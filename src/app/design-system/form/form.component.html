@@ -1,4 +1,4 @@
-  <form>
+  <form #loginForm=ngForm style="width: 100%; ">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label"
         >TELEFONO O E-MAIL</label
@@ -9,14 +9,18 @@
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Inserisci numero di telefono o e-mail"
-      />
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+        name="email" required ngModel/>
+      <p *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)" class="text-danger">Il tuo indirizzo e-mail non è valido</p>
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci la password" />
-      <span class="eyeInput"
-        ><img src="assets/design-system/other-icons/eye-input-form.svg" alt=""
-      /></span>
+    <div class="mb-3 pswcont">
+      <div>
+        <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+      </div>
+      <div class="pswcont1">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci la password" />
+
+      </div>
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1" />

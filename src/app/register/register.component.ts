@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 
 
 @Component({
@@ -13,5 +14,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onSubmit(x:Form){
+    
+  }
 }

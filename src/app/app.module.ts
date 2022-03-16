@@ -32,6 +32,9 @@ import { ListComponentComponent } from './list-component/list-component.componen
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +68,7 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     RegisterComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

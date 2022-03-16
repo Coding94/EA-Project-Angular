@@ -1,10 +1,28 @@
+@import url(//db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 * {
   background-color: #1d2033;
 }
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -48,25 +66,32 @@ p {
 .socialIcons {
   border-radius: 25%;
 }
+.socialIcons:hover {
+  transform: scale(0.95);
+}
+
 .formCont {
   width: 65%;
 }
 .form-control:hover {
-  border: 2px solid #908e97;
+  border: 1px solid #908e97;
   transition: linear 300ms;
-  box-shadow: 0 0 25px 20px #3d4366;
+  box-shadow: 0 0 25px 5px #3d4366;
 }
 .form-control:focus {
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   transition: linear 300ms;
   background-color: #3d4366;
 }
 
 .form-control {
   color: white;
+  border: 2px solid #62626f;
+  border-radius: 4px;
 }
 label {
   color: white;
+  background: transparent;
 }
 option {
   color: white;
@@ -74,4 +99,76 @@ option {
 .dobContainer {
   display: flex;
   gap: 10px;
+}
+.bttnAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bttnBlueSize {
+  width: 400px;
+  transition: linear 200ms;
+  font-weight: bolder;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.bttnBlueSize:hover {
+  box-shadow: 0px 0px 10px 5px #1d2033;
+  transform: scale(0.99);
+  transition: linear 200ms;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+button:disabled,
+button[disabled] {
+  border: none;
+  background-color: #343647;
+  color: #908e97;
+  font-size: 16px;
+  cursor: not-allowed;
+  letter-spacing: 0.15em;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.separator {
+  color: gray;
+}
+.separatorcont {
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: gray;
+}
+.leftsep {
+  background: gray;
+  height: 3px;
+  width: 150px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.rightsep {
+  background: gray;
+  height: 3px;
+  width: 150px;
+  border-radius: 5px;
+  margin-top: 3px;
 }
