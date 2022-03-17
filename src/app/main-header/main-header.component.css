@@ -1,11 +1,4 @@
 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .mainHeader {
   position: relative;
   overflow: visible;
@@ -19,7 +12,7 @@
   background-color: #161616;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,6 +26,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  top:10px;
+  right: 10px;
 }
 .icons div {
   cursor: pointer;
@@ -48,156 +44,92 @@
   filter: brightness(150%);
 }
 
- .navBar {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  /* margin-top: 40px; */
-  /* border: 1px solid red; */
-  z-index: 4;
-}
-.navBarDots {
-  height: 19px;
-  width: fit-content;
-  margin-left: 20px;
-  transition: linear 0.2s;
-  margin-bottom: 13px;
-}
-.divAlignLeft {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.divLinks {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-left: 20px;
-}
-.divLinks div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.eaImg {
-  padding: 0 30px;
-}
-
-.divLinks div svg {
-  margin-left: 10px;
-}
-
-
-.h3HelpTop {
-  font-size: 1.2rem;
-  font-weight: 300;
-  position: absolute;
-  padding-bottom: 210px;
-  color: white;
-  padding-top: 10px;
-}
-
-.h3BottomFather {
-  font-size: 0.9rem;
-  font-weight: 300;
-  position: absolute;
-  padding-top: 230px;
-  color: white;
-}
-
-.iconsStyleRed {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  cursor: pointer;
-}
-
-
-.divFatherRedStyle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 200px;
-  width: 360px;
-  opacity: 1;
-}
-
-.divFatherTwoRedStyle {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 200px;
-  width: 650px;
-  opacity: 1;
-}
 /*/-----------------------------------------/*/
-
 
 /* new css style */
 
-.h3AllIcons {
-  font-size: 1rem;
-  font-weight: 300;
-  padding-top: 10px;
-}
-.containerMain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.centerDivIcons {
-  /* background-color: rgb(223, 216, 12); */
+.userIconCenter {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding:0  0 20px 0;
+  justify-content: center;
+  width: 500px;
   height: 200px;
+  gap:250px;
+  /* background-color: aqua; */
+}
+
+.wrapperQuestion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.questionIconCenter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   width: 600px;
-  opacity: 1;
+  height: 200px;
+  /* background-color: aqua; */
 }
 
-.divXstyle {
-  height: 30px;
+.prova2 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  /* background-color: rgb(229, 255, 0); */
   cursor: pointer;
+  transition: all 150ms ;
+  transform: translateY(0);
+}
+.prova3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(229, 255, 0); */
+  cursor: pointer;
+  transition: all 150ms ;
+  transform: translateY(0);
+}
+
+.prova2:hover{
+transform:translateY(-6px);
+}
+
+.iconGeneralClass {
+  width: 40px;
+  height: 40px;
+}
+
+.generalP {
+  color: white;
+}
+
+.xIcon {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 70px;
-  right: 40px;
+  right: 20px;
+  top: 50px;
 }
 
 
-.allIconsStyle {
-  width:40px;
-  height:40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.helpParag {
+  font-size:1.6em;
+  color:white;
 }
 
-.divContainerSvg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  cursor: pointer;
+
+.foundParag {
+  font-size:1em;
+  color:white;
 }
-.divContainerSvg2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  cursor: pointer;
+
+.foundParag > a {
+  color:red;
+  text-decoration: none;
 }

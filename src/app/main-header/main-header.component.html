@@ -1,7 +1,52 @@
 <header class="mainHeader">
-  <div class="headerDiv" #tryIt>
+  <div class="headerDiv">
+    <ng-container *ngIf="prova === false">
+      <div class="userIconCenter">
+        <div class="prova2">
+         <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconsignin.svg">
+         <p class="generalP">Accedi</p>
+        </div>
+        <div class="prova2">
+          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconregister.svg">
+          <p class="generalP">Crea Account</p>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="prova2 === true">
+      <div class="wrapperQuestion">
+        <div>
+          <p class="helpParag">Ti serve Aiuto?</p>
+        </div>
+      <div class="questionIconCenter">
+        <div class="prova2">
+         <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconorigin.svg">
+         <p class="generalP">Verifica i dati di accesso su Origin</p>
+        </div>
+        <div class="prova2">
+         <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconlink.svg">
+         <p class="generalP">Come riscattare un codice</p>
+        </div>
+        <div class="prova2">
+         <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconorigincode.svg">
+         <p class="generalP">Collega Origin al mio ID PSN </p>
+        </div>
+        <div class="prova2">
+          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconalert.svg">
+          <p class="generalP">Non riesco a giocare online</p>
+        </div>
+      </div>
+      <div>
+        <p class="foundParag">Non hai trovato ciò che cerchi? Vai su<a href="http://">Aiuto EA</a>, <a href="http://">Answers HQ</a> oder die <a href="http://">Forum EA</a></p>
+      </div>
+      </div>
+    </ng-container>
     <div class="icons">
-      <div (click)="openClickIconUser()">
+      <ng-container *ngIf="prova === false || prova2 === true">
+        <div class="xIcon" (click)="xIconClick()">
+          <img  src="../../assets/other-icons/x.svg">
+        </div>
+      </ng-container>
+      <div (click)="userIconClick()">
         <svg
           viewBox="0 0 18 18"
           preserveAspectRatio="xMidYMid meet"
@@ -17,7 +62,7 @@
           </g>
         </svg>
       </div>
-      <div (click)="openClickIconQuestion()">
+      <div (click)="questionIconClick()" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
           <path
             d="M5.193,0C0.538,0,0,2.673,0,4.684a0.978,0.978,0,0,0,1.955,0c0-1.648.225-2.729,3.238-2.729,2.852,0,2.852,1.45,2.852,2.729a1.951,1.951,0,0,1-1.29,1.675l-0.216.083C4.8,7.108,3.809,7.531,3.809,8.472v3.5a0.978,0.978,0,1,0,1.955,0V8.887c0.4-.209,1.152-0.5,1.474-0.62l0.224-.085A3.831,3.831,0,0,0,10,4.684C10,3.526,10,0,5.193,0Z"
@@ -27,7 +72,7 @@
           ></path>
         </svg>
       </div>
-      <div>
+      <div >
         <svg
           style="width: 30px; height: 30px"
           viewBox="0 0 32 32"
@@ -45,4 +90,6 @@
   </div>
 </header>
 <ea-nav-bar></ea-nav-bar>
+
+
 
