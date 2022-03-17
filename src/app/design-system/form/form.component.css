@@ -5,9 +5,13 @@
 .form-control {
   height: 50px;
   background-color: #141724;
+  color: white;
   border-radius: 8px;
   border: 2px solid #62626f;
   transition: linear 300ms;
+}
+::placeholder {
+  color: white;
 }
 .form-label,
 .form-check {
