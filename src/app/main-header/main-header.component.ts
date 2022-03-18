@@ -16,7 +16,6 @@ export class MainHeaderComponent implements OnInit {
   prova2!: boolean;
   xIcon!: HTMLElement;
   transitionEvent!: Event;
-  window!: any;
   currentScroll: any = document.documentElement.scrollTop || document.body.scrollTop;
   lastScroll: any;
 
@@ -50,7 +49,7 @@ export class MainHeaderComponent implements OnInit {
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
         this.prova = true;
-      },100);
+      },120);
       // this.userIconClick2();
     } else if (this.headerDiv.style.minHeight === "450px" && this.prova2 === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
@@ -65,7 +64,7 @@ export class MainHeaderComponent implements OnInit {
       setTimeout(() => {
          this.prova = false;
          this.prova2 = false;
-      }, 100);
+      }, 150);
     }
   }
 
@@ -77,7 +76,7 @@ export class MainHeaderComponent implements OnInit {
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
         this.prova2 = true;
-      }, 150);
+      }, 160);
       // this.questionIconClick2();
     } else if (this.headerDiv.style.minHeight === "450px" && this.prova === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
@@ -90,7 +89,7 @@ export class MainHeaderComponent implements OnInit {
       setTimeout(() => {
          this.prova = false;
          this.prova2 = false;
-      }, 100);
+      }, 150);
     }
   }
 
