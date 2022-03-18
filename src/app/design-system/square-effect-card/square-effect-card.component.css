@@ -45,3 +45,74 @@ h3 {
   transition: all 300ms ease-out;
   z-index: 2;
 }
+
+.fifaCard {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/Background-images/immagini_prima_section/fifa22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+.f1Card {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/Background-images/immagini_prima_section/F1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+.nfsCard {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/Background-images/immagini_prima_section/need_For_Speed_HotPursuit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+.apexCard {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/Background-images/immagini_prima_section/apex_Legends.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+.simsCard {
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/Background-images/immagini_prima_section/The_Sims_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}

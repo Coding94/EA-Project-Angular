@@ -2,12 +2,19 @@
   (mouseenter)="hoverFunction()"
   (mouseleave)="outFunction()"
   class="battleFieldCard"
+  [ngClass]="{
+    fifaCard: logoPath == '../../assets/Logos/FIFA-22-logo.png',
+    f1Card: logoPath == '../../assets/Logos/F1-2021.svg',
+    nfsCard: logoPath == '../../assets/Logos/NFS-HP-logo.png',
+    apexCard: logoPath == '../../assets/Logos/apex-logo.svg',
+    simsCard: logoPath == '../../assets/Logos/TheSims-logo.png'
+  }"
 >
   <div [ngStyle]="{ opacity: opacita }" class="gradientColor">
     <h3 *ngIf="opacita">Sito ufficiale</h3>
   </div>
 
   <div [ngStyle]="{ transform: translateY, transition: transitionmS }">
-    <img src="../../../assets/Logos/Battlefield-2042-logo.svg" alt="" />
+    <img src="{{ logoPath }}" alt="" width="{{ widthLogo }}" />
   </div>
 </div>
