@@ -1,6 +1,6 @@
 <header class="mainHeader">
   <div class="headerDiv">
-    <ng-container *ngIf="prova === false">
+    <section  *ngIf="prova">
       <div class="userIconCenter">
         <div class="prova2">
          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconsignin.svg">
@@ -11,8 +11,8 @@
           <p class="generalP">Crea Account</p>
         </div>
       </div>
-    </ng-container>
-    <ng-container *ngIf="prova2 === true">
+    </section>
+    <section *ngIf="prova2">
       <div class="wrapperQuestion">
         <div>
           <p class="helpParag">Ti serve Aiuto?</p>
@@ -39,13 +39,13 @@
         <p class="foundParag">Non hai trovato ciò che cerchi? Vai su<a href="http://">Aiuto EA</a>, <a href="http://">Answers HQ</a> oder die <a href="http://">Forum EA</a></p>
       </div>
       </div>
-    </ng-container>
+    </section>
     <div class="icons">
-      <ng-container *ngIf="prova === false || prova2 === true">
+      <section *ngIf="prova  || prova2">
         <div class="xIcon" (click)="xIconClick()">
           <img  src="../../assets/other-icons/x.svg">
         </div>
-      </ng-container>
+      </section>
       <div (click)="userIconClick()">
         <svg
           viewBox="0 0 18 18"
