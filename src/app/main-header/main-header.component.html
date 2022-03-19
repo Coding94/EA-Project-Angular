@@ -1,47 +1,47 @@
 <header class="mainHeader">
   <div class="headerDiv">
-    <section  *ngIf="prova">
+    <section  *ngIf="userRender">
       <div class="userIconCenter">
-        <div class="prova2">
+        <div class="upAndDownIcons">
          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconsignin.svg">
-         <p class="generalP">Accedi</p>
+         <p class="colorParagraph">Accedi</p>
         </div>
-        <div class="prova2">
+        <div class="upAndDownIcons">
           <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconregister.svg">
-          <p class="generalP">Crea Account</p>
+          <p class="colorParagraph">Crea Account</p>
         </div>
       </div>
     </section>
-    <section *ngIf="prova2">
+    <section *ngIf="questionRender">
       <div class="wrapperQuestion">
         <div>
-          <p class="helpParag">Ti serve Aiuto?</p>
+          <p class="helpParagraph">Ti serve Aiuto?</p>
         </div>
       <div class="questionIconCenter">
-        <div class="prova2">
+        <div class="upAndDownIcons">
          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconorigin.svg">
-         <p class="generalP">Verifica i dati di accesso su Origin</p>
+         <p class="colorParagraph">Verifica i dati di accesso su Origin</p>
         </div>
-        <div class="prova2">
+        <div class="upAndDownIcons">
          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconlink.svg">
-         <p class="generalP">Come riscattare un codice</p>
+         <p class="colorParagraph">Come riscattare un codice</p>
         </div>
-        <div class="prova2">
+        <div class="upAndDownIcons">
          <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconorigincode.svg">
-         <p class="generalP">Collega Origin al mio ID PSN </p>
+         <p class="colorParagraph">Collega Origin al mio ID PSN </p>
         </div>
-        <div class="prova2">
+        <div class="upAndDownIcons">
           <img  class="iconGeneralClass" src="../../assets/other-icons/eaglobalnav-iconalert.svg">
-          <p class="generalP">Non riesco a giocare online</p>
+          <p class="colorParagraph">Non riesco a giocare online</p>
         </div>
       </div>
       <div>
-        <p class="foundParag">Non hai trovato ciò che cerchi? Vai su<a href="http://">Aiuto EA</a>, <a href="http://">Answers HQ</a> oder die <a href="http://">Forum EA</a></p>
+        <p class="foundParagraph">Non hai trovato ciò che cerchi? Vai su<a href="http://">Aiuto EA</a>, <a href="http://">Answers HQ</a> oder die <a href="http://">Forum EA</a></p>
       </div>
       </div>
     </section>
     <div class="icons">
-      <section *ngIf="prova  || prova2">
+      <section *ngIf="userRender  || questionRender">
         <div class="xIcon" (click)="xIconClick()">
           <img  src="../../assets/other-icons/x.svg">
         </div>
@@ -83,7 +83,7 @@
             <path
               d="M19.766,8.372L6.927,8.392l-2.093,3.337l12.818-0.004L19.766,8.372 M14.221,20.518c-0.151,0-7.604,0.016-8.114,0.016 c0.249-0.393,1.665-2.611,1.738-2.733c0.163,0,5.014,0,5.271,0l2.122-3.354L3.117,14.467l-2.114,3.342l2.827-0.005L0,23.874h16.151 c0.286-0.453,5.654-9.017,5.904-9.412c0.219,0.334,1.664,2.623,1.9,3.002c-0.363,0-1.682,0-1.682,0l-2.101,3.337 c0,0,0.009,0,0.029,0c0.428,0,5.719,0,5.875,0c0.085,0.135,1.827,2.876,1.921,3.023H32L22.038,8.127 C21.646,8.738,14.311,20.374,14.221,20.518"
             ></path>
-          </g>
+          </g>ks
         </svg>
       </div>
     </div>

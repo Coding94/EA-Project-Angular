@@ -9,15 +9,11 @@ export class MainHeaderComponent implements OnInit {
 
   icons!: HTMLElement;
   headerDiv!: HTMLElement;
-  body!: HTMLElement;
   userIconDiv!: HTMLElement;
   wrapperQuestion!: HTMLElement;
-  prova!: boolean;
-  prova2!: boolean;
+  userRender!: boolean;
+  questionRender!: boolean;
   xIcon!: HTMLElement;
-  transitionEvent!: Event;
-  currentScroll: any = document.documentElement.scrollTop || document.body.scrollTop;
-  lastScroll: any;
 
 
   ngOnInit(): void {
@@ -27,14 +23,13 @@ export class MainHeaderComponent implements OnInit {
   
 
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) {
+  constructor(private elementRef: ElementRef, private renderer: Renderer2){
   }
 
 
   ngAfterViewInit() {
     this.headerDiv = this.elementRef.nativeElement.querySelector('.headerDiv');
     this.icons = this.elementRef.nativeElement.querySelector('.icons');
-    this.body = this.elementRef.nativeElement.querySelector('body');
     this.userIconDiv = this.elementRef.nativeElement.querySelector('.userIconCenter');
     this.wrapperQuestion = this.elementRef.nativeElement.querySelector('.wrapperQuestion');
     this.renderer.setStyle(this.headerDiv, 'minHeight', '40px');
@@ -42,32 +37,30 @@ export class MainHeaderComponent implements OnInit {
   };
 
 
-
   userIconClick() {
     if (this.headerDiv.style.minHeight === "40px") {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
-        this.prova = true;
+        this.userRender = true;
       },120);
       // this.userIconClick2();
-    } else if (this.headerDiv.style.minHeight === "450px" && this.prova2 === true) {
+    } else if (this.headerDiv.style.minHeight === "450px" && this.questionRender === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       // this.renderer.setStyle(this.wrapperQuestion,'transform','translateY(300px)')
       // this.renderer.setStyle(this.wrapperQuestion,'opacity','1');
-      this.prova = true;
-      this.prova2 = false;
+      this.userRender = true;
+      this.questionRender = false;
     } else {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
-         this.prova = false;
-         this.prova2 = false;
+         this.userRender = false;
+         this.questionRender = false;
       }, 150);
     }
   }
-
 
 
   questionIconClick() {
@@ -75,20 +68,20 @@ export class MainHeaderComponent implements OnInit {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
-        this.prova2 = true;
+        this.questionRender = true;
       }, 160);
       // this.questionIconClick2();
-    } else if (this.headerDiv.style.minHeight === "450px" && this.prova === true) {
+    } else if (this.headerDiv.style.minHeight === "450px" && this.userRender === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
-      this.prova2 = true;
-      this.prova = false;
+      this.questionRender = true;
+      this.userRender = false;
     } else {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
       setTimeout(() => {
-         this.prova = false;
-         this.prova2 = false;
+         this.userRender = false;
+         this.questionRender = false;
       }, 150);
     }
   }
@@ -98,16 +91,10 @@ export class MainHeaderComponent implements OnInit {
     if (this.headerDiv.style.minHeight === "450px") {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
       setTimeout(() => {
-        this.prova = false;
-        this.prova2 = false;
+        this.userRender = false;
+        this.questionRender = false;
       }, 150);
-      
     }
   }
-
-
-
-
-
 
 }
