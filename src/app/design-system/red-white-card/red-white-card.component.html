@@ -1,18 +1,17 @@
 <div class="card">
   <img
-    src="../../../assets/Background-images/bg-ea-card.jpg"
+    src="{{card.URLpath}}"
     class="card-img-top"
     alt="..."
   />
   <div class="card-body">
-    <span class="electronicSpan">Electronic Arts Inc.</span
-    ><span class="dateSpan">1-gen-2022</span>
+    <span  class="electronicSpan">{{card.spanText}}</span
+    ><span class="dateSpan">{{card.date}}</span>
     <h5 class="card-title" id="h5Title">
-      Riflettore sui SimGuru: le interviste di FreePlay
+     {{card.h5Text}}
     </h5>
     <p class="card-text">
-      Rispondiamo alle tue domande mentre festeggiamo il nostro decimo
-      compleanno
+     {{card.paragraphText}}
     </p>
   </div>
 </div>

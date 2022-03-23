@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second-section.component.css']
 })
 export class SecondSectionComponent implements OnInit {
-  
-  
+
+  receivedNumberFromList!:number;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+   receivedNumber(numeroRicevuto:number){
+     this.receivedNumberFromList = numeroRicevuto;
+     console.log(this.receivedNumberFromList);
+   }
 }
