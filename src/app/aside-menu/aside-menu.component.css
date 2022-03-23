@@ -1,69 +1,18 @@
-.navBar {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 4;
-  /* position: fixed; */
-  background-color: white;
-}
-.navBarDots {
-  height: 19px;
-  width: fit-content;
-  margin-left: 20px;
-  transition: linear 0.2s;
-  margin-bottom: 13px;
-}
-.divAlignLeft {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.divLinks {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-left: 20px;
-}
-.divLinks div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.eaImg {
-  padding: 0 30px;
-}
-
-.divLinks div svg {
-  margin-left: 10px;
-}
-
-.navBarDots:hover {
-  height: 19px;
-  width: fit-content;
-  margin-left: 20px;
-  transform: scale(1.5);
-  fill: tomato;
-  transition: linear 0.2s;
-}
-
-/* .asideDiv {
-  height: 100vh;
+.asideDiv {
+  height: 1000px;
   width: 420px;
   position: absolute;
   top: 40px;
-  left: -450px;
+  left: -420px;
   z-index: 9;
   background-color: white;
-  transition: ease-in-out 0.3s;
+  transition: linear 0.3s;
   padding: 0 30px;
-  overflow-y: scroll;
 }
 
-.asideDiv::-webkit-scrollbar {
+/* .asideDiv::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .darkBgDiv {
   position: absolute;
@@ -140,4 +89,4 @@
     url(../../assets/Background-images/immagini_prima_section/F1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-} */
+}

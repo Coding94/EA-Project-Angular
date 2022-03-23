@@ -25,6 +25,7 @@ import { SquareEffectCardComponent } from './design-system/square-effect-card/sq
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FirstSectionComponent } from './first-section/first-section.component';
+import { AsideMenuComponent } from './aside-menu/aside-menu.component';
 
 import { SecondSectionComponent } from './second-section/second-section.component';
 import { ThirdSectionComponent } from './third-section/third-section.component';
@@ -56,6 +57,7 @@ import { LatestNewsCardsComponent } from './latest-news-cards/latest-news-cards.
     MainHeaderComponent,
     NavBarComponent,
     FirstSectionComponent,
+    AsideMenuComponent,
 
     SecondSectionComponent,
     ThirdSectionComponent,
