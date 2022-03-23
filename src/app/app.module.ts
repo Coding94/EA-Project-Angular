@@ -31,6 +31,12 @@ import { SecondSectionComponent } from './second-section/second-section.componen
 import { ThirdSectionComponent } from './third-section/third-section.component';
 import { ListComponentComponent } from './list-component/list-component.component';
 import { LatestNewsCardsComponent } from './latest-news-cards/latest-news-cards.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+import { FormsModule } from '@angular/forms';
+import { RegisterTwoComponent } from './register-two/register-two.component';
+
 
 @NgModule({
   declarations: [
@@ -64,8 +70,11 @@ import { LatestNewsCardsComponent } from './latest-news-cards/latest-news-cards.
     ListComponentComponent,
     FooterComponent,
     LatestNewsCardsComponent,
+    LoginComponent,
+    RegisterComponent,
+    RegisterTwoComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
