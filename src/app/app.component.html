@@ -1,2 +1,7 @@
-<ea-main-header></ea-main-header>
-<ea-first-section></ea-first-section>
+<div [ngClass]="darkBgDivClass">
+  <ea-main-header></ea-main-header>
+  <!-- <ea-nav-bar></ea-nav-bar> -->
+  <ea-nav-bar (openAside)="openAside($event)"></ea-nav-bar>
+  <ea-first-section></ea-first-section>
+</div>
+<ea-aside-menu [observable]="observable"></ea-aside-menu>

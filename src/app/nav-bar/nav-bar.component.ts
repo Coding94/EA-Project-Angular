@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { BehaviorSubject, Observable, of } from 'rxjs';
+import { LayoutService } from '../shared/layout.service';
 
 @Component({
   selector: 'ea-nav-bar',
@@ -6,11 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  constructor() {}
+  constructor(private servLayout: LayoutService) {}
+
+  @Input() controlVar!: boolean;
+
+  @Output() openAside = new EventEmitter<BehaviorSubject<boolean>>();
+
+  control$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   ngOnInit(): void {
     this.navAnim();
+    this.openAside.emit(this.control$);
   }
+
+  openAsideDiv() {
+    this.control$.next(true);
+    this.servLayout.openAside('asideDivOnClick');
+  }
+
   navAnim() {
     let childrenOfDivLinks: any = document.querySelector('.divLinks')!.children;
     let giochiList = [

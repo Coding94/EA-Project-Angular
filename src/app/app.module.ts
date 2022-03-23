@@ -24,6 +24,7 @@ import { SquareEffectCardComponent } from './design-system/square-effect-card/sq
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FirstSectionComponent } from './first-section/first-section.component';
+import { AsideMenuComponent } from './aside-menu/aside-menu.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { FirstSectionComponent } from './first-section/first-section.component';
     MainHeaderComponent,
     NavBarComponent,
     FirstSectionComponent,
+    AsideMenuComponent,
 
   ],
   imports: [BrowserModule],
