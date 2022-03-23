@@ -2,13 +2,6 @@
 * {
   background-color: #1d2033;
 }
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
 @font-face {
   font-family: "Electronic Arts Text";
   src: url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
@@ -23,6 +16,7 @@ a:hover {
     url("//db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
       format("svg");
 }
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -34,17 +28,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 32%;
 }
 span {
   color: white;
-  margin-top: 25px;
 }
 
 h3 {
-  color: white;
-  font-size: 24px;
-}
-p {
   color: white;
 }
 
@@ -53,106 +43,30 @@ p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 65%;
-  text-align: center;
+  gap: 20px;
 }
-.separator {
-  color: lightgray;
-}
-.social-login-logos {
-  display: flex;
-  width: 65%;
-  justify-content: space-between;
-}
-.socialIcons {
-  border-radius: 25%;
-}
-.socialIcons:hover {
-  transform: scale(0.95);
-}
-
-.formCont {
-  width: 65%;
-}
-.form-control:hover {
-  border: 1px solid #908e97;
-  transition: linear 300ms;
-  box-shadow: 0 0 25px 5px #3d4366;
-}
-.form-control:focus {
-  border: 1px solid #ffffff;
-  transition: linear 300ms;
-  background-color: #3d4366;
-}
-
-.form-control {
-  color: white;
-  border: 2px solid #62626f;
-  border-radius: 4px;
-}
-label {
-  color: white;
-  background: transparent;
-}
-option {
-  color: white;
-}
-.dobContainer {
-  display: flex;
-  gap: 10px;
-}
-.bttnAlignCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bttnBlueSize {
-  width: 400px;
-  transition: linear 200ms;
-  font-weight: bolder;
-  border: none;
-  background-color: #0d6efd;
-  color: white;
-  font-size: 16px;
-  letter-spacing: 0.15em;
-  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.bttnBlueSize:hover {
-  box-shadow: 0px 0px 10px 5px #1d2033;
-  transform: scale(0.99);
-  transition: linear 200ms;
-  border: none;
-
-  color: white;
-  font-size: 16px;
-  letter-spacing: 0.15em;
-  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-button:disabled,
-button[disabled] {
-  border: none;
-  background-color: #343647;
-  color: #908e97;
-  font-size: 16px;
-  cursor: not-allowed;
-  letter-spacing: 0.15em;
-  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
 .separator {
   color: gray;
 }
+
+.socialIcons {
+  border-radius: 25%;
+}
+.formCont {
+  width: 100%;
+}
+.social-login-logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.socialIcons:hover {
+  transform: scale(0.95);
+}
 .separatorcont {
   margin-bottom: 25px;
-
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,4 +86,133 @@ button[disabled] {
   width: 150px;
   border-radius: 5px;
   margin-top: 3px;
+}
+span {
+  margin-top: 25px;
+}
+.formPers {
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.form-control {
+  height: 50px;
+  background-color: #141724;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid #62626f;
+  transition: linear 300ms;
+}
+::placeholder {
+  color: #908e97;
+}
+.form-label,
+.form-check {
+  color: white;
+  font-weight: bolder;
+}
+.form-check-input {
+  background-color: #141724;
+  border: #62626f;
+  border-radius: 4px;
+  transition: linear 300ms;
+}
+
+.form-control:hover {
+  border: 2px solid #908e97;
+  transition: linear 300ms;
+  box-shadow: 0 0 25px 20px #1e2133;
+}
+.form-control:focus {
+  border: 2px solid #ffffff;
+  transition: linear 300ms;
+  background-color: #141724;
+}
+
+.form-check-input:hover {
+  box-shadow: 0 0 25px 20px #1e2133;
+  transition: linear 300ms;
+}
+.form-check-input:focus {
+  border: 2px solid #ffffff;
+  transition: linear 300ms;
+  background-color: #1b4ab0;
+  box-shadow: 0 0 30px 2px #ffffff;
+}
+.mb-3 {
+  position: relative;
+}
+.pswcont {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyeInput {
+  border-radius: 8px;
+  height: 33px;
+  width: 40px;
+  background-color: #54545d6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: linear 300ms;
+}
+.eyeInput:hover {
+  background-color: #141724;
+  transition: linear 300ms;
+  transform: scale(0.95);
+}
+
+.formPers {
+  position: relative;
+}
+
+.titleComponent {
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+#gray {
+  color: #908e97;
+}
+.bttnBlueSize {
+  width: 100%;
+  transition: linear 200ms;
+  font-weight: bolder;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.15em;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.bttnAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:disabled,
+button[disabled] {
+  border: none;
+  background-color: #343647;
+  /* color: #908e97;
+  font-size: 16px;
+  cursor: not-allowed;
+  letter-spacing: 0.15em;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+}
+.pswtooltip {
+  padding: 12px 12px;
+}
+
+.bttnBlueSize:hover {
+  box-shadow: 0px 0px 10px 5px #1d2033;
+  transform: scale(0.99);
+  transition: linear 200ms;
 }

@@ -33,6 +33,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 import { FormsModule } from '@angular/forms';
+import { RegisterTwoComponent } from './register-two/register-two.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     RegisterComponent,
+    RegisterTwoComponent,
   ],
   imports: [BrowserModule,FormsModule],
   providers: [],
