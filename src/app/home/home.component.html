@@ -1,7 +1,7 @@
 <div [ngClass]="darkBgDivClass">
-    <ea-main-header></ea-main-header>
+    <ea-main-header (emitter)="getData($event)"></ea-main-header>
     <!-- <ea-nav-bar></ea-nav-bar> -->
-    <ea-nav-bar (openAside)="openAside($event)"></ea-nav-bar>
+    <ea-nav-bar [x]="x" (openAside)="openAside($event)"></ea-nav-bar>
     <ea-first-section></ea-first-section>
     <ea-second-section></ea-second-section>
     <ea-third-section></ea-third-section>

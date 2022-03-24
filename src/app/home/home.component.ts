@@ -7,9 +7,9 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  
   constructor() { }
-
+  x!:any;
   observable!: BehaviorSubject<boolean>;
   noScrollClass!: boolean;
   darkBgDivClass!: any;
@@ -24,5 +24,9 @@ export class HomeComponent implements OnInit {
     if (this.noScrollClass == true) {
       this.darkBgDivClass = 'darkBgDiv';
     }
+  }
+
+  getData(parametroDato:any){
+    this.x = parametroDato;
   }
 }

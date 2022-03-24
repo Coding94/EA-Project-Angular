@@ -12,7 +12,7 @@ export class WhiteCardServiceService {
   notizieEa = [ 
     
        {
-        URLpath:'',
+        URLpath:'../../../assets/Background-images/ea-positive-play.png',
         spanText:'Electronic Arts Inc.',
         date:'8-mar-2022',
         h5Text:"Lavoriamo insieme per abbattere i pregiudizi. #BreaktheBias",

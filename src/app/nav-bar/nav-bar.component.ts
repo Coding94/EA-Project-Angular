@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { WindowScrollService } from '@app/EAservices/window-scroll.service';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { LayoutService } from '../shared/layout.service';
 
@@ -8,17 +9,19 @@ import { LayoutService } from '../shared/layout.service';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  constructor(private servLayout: LayoutService) {}
-
+  constructor(private servLayout: LayoutService, private windowScroll:WindowScrollService) {}
+   
   @Input() controlVar!: boolean;
 
   @Output() openAside = new EventEmitter<BehaviorSubject<boolean>>();
-
+  
+  @Input() x!:any;
   control$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   ngOnInit(): void {
     this.navAnim();
     this.openAside.emit(this.control$);
+    this.x = this.windowScroll.getX();
   }
 
   openAsideDiv() {

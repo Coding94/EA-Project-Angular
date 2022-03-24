@@ -4,8 +4,9 @@
   display: flex;
   align-items: center;
   z-index: 4;
-  /* position: fixed; */
+  position: fixed;
   background-color: white;
+  transition: all linear 0.5s;
 }
 .navBarDots {
   height: 19px;
@@ -47,6 +48,18 @@
   fill: tomato;
   transition: linear 0.2s;
 }
+
+.topPosition{
+  transform: translateY(-40px);
+  position: fixed;
+  transition: all linear 0.5s;
+}
+
+/* .topPosition{
+  top: 0;
+  position: fixed;
+  transition: linear 0.5s;
+} */
 
 /* .asideDiv {
   height: 100vh;

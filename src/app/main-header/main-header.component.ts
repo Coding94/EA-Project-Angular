@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output, Renderer2 } from '@angular/core';
+import { WindowScrollService } from '@app/EAservices/window-scroll.service';
 
 @Component({
   selector: 'ea-main-header',
@@ -6,9 +7,11 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./main-header.component.css'],
 })
 export class MainHeaderComponent implements OnInit {
+  @Output() emitter = new EventEmitter();
 
   icons!: HTMLElement;
-  headerDiv!: HTMLElement;
+  headerDiv: HTMLElement= this.elementRef.nativeElement.querySelector('.headerDiv');
+  mainHeader = this.elementRef.nativeElement.querySelector('.mainHeader');
   userIconDiv!: HTMLElement;
   wrapperQuestion!: HTMLElement;
   userRender!: boolean;
@@ -17,23 +20,22 @@ export class MainHeaderComponent implements OnInit {
 
 
   ngOnInit(): void {
-
   }
 
-  
 
-
-  constructor(private elementRef: ElementRef, private renderer: Renderer2){
+   
+  constructor(private elementRef: ElementRef, private renderer: Renderer2 ){
   }
 
 
   ngAfterViewInit() {
     this.headerDiv = this.elementRef.nativeElement.querySelector('.headerDiv');
+    this.mainHeader = this.elementRef.nativeElement.querySelector('.mainHeader');
     this.icons = this.elementRef.nativeElement.querySelector('.icons');
     this.userIconDiv = this.elementRef.nativeElement.querySelector('.userIconCenter');
     this.wrapperQuestion = this.elementRef.nativeElement.querySelector('.wrapperQuestion');
     this.renderer.setStyle(this.headerDiv, 'minHeight', '40px');
-    this.renderer.addClass(this.icons, 'icons')
+    this.renderer.addClass(this.icons, 'icons');
   };
 
 
@@ -41,6 +43,7 @@ export class MainHeaderComponent implements OnInit {
     if (this.headerDiv.style.minHeight === "40px") {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
       setTimeout(() => {
         this.userRender = true;
       },120);
@@ -97,4 +100,25 @@ export class MainHeaderComponent implements OnInit {
     }
   }
 
+  // @HostListener("window:scroll") doScroll(){
+  //   this.headerDiv.style.transform= "translateY(-40px)";
+  //   console.log("ciao");
+  // }
+
+  currentPosition = window.pageYOffset;
+@HostListener('window:scroll', ['$event.target']) // for window scroll events
+scroll(e:any) {
+  let scroll = e.scrollingElement.scrollTop;
+  console.log("this is the scroll position", scroll)
+  if (scroll > this.currentPosition) {
+    console.log("scrollDown");
+        this.headerDiv.style.transform= "translateY(-40px)";
+        this.emitter.emit(true);
+      } else {
+        console.log("scrollUp");
+        this.headerDiv.style.transform= "translateY(0px)";
+        this.emitter.emit(false);
+  }
+  this.currentPosition = scroll;
+}
 }
