@@ -36,6 +36,8 @@ import { RegisterComponent } from './register/register.component';
 
 import { FormsModule } from '@angular/forms';
 import { RegisterTwoComponent } from './register-two/register-two.component';
+import { eaRoutingModule } from './ea-routing/ea-routing.module';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -73,8 +75,9 @@ import { RegisterTwoComponent } from './register-two/register-two.component';
     LoginComponent,
     RegisterComponent,
     RegisterTwoComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule,FormsModule],
+  imports: [BrowserModule,FormsModule,eaRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,7 +1,7 @@
 <div class="main-container">
     <div class="sub-main-container">
         <div class="loginUpper">
-            <img src="assets\Logos\EA-red-logo.png" alt="EALOGO" width="60">
+            <img src="assets\Logos\EA-red-logo.png" alt="EALOGO" width="60" routerLink="/home">
             <h3>Crea un account EA</h3>
             <p>Basterà seguire pochi passaggi per completare il tuo account EA (è veloce, promesso).</p>
         </div>
@@ -441,7 +441,7 @@
     
             
                 <div class="d-grid gap-2 col-6 mx-auto my-5 bttnAlignCenter">
-                    <button class="btn btn-primary bttnBlueSize" [disabled]="f.invalid" type="button">AVANTI</button>
+                    <button class="btn btn-primary bttnBlueSize" [disabled]="f.invalid" type="button" routerLink="/registerTwo">AVANTI</button>
                   </div>
 
         </form>

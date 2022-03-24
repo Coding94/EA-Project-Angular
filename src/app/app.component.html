@@ -1,16 +1,1 @@
-<div [ngClass]="darkBgDivClass">
-  <ea-main-header></ea-main-header>
-  <!-- <ea-nav-bar></ea-nav-bar> -->
-  <ea-nav-bar (openAside)="openAside($event)"></ea-nav-bar>
-  <ea-first-section></ea-first-section>
-  <ea-second-section></ea-second-section>
-  <ea-third-section></ea-third-section>
-  <ea-footer></ea-footer>
-</div>
-<ea-aside-menu [observable]="observable"></ea-aside-menu>
-
-<ea-register></ea-register>
-
-<ea-login></ea-login>
-
-<ea-register-two></ea-register-two>
+<router-outlet></router-outlet>
