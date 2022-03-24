@@ -15,4 +15,7 @@ export class WindowScrollService {
   changeX(){
     this.x = true;
   }
+  changeY(){
+    this.x= false;
+  }
 }
