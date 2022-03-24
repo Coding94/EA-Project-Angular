@@ -36,6 +36,25 @@
   cursor: pointer;
 }
 
+
+
+
+.svgDiv > svg:hover{
+  fill: red;
+}
+
+.tuttiIgiochi {
+  font-weight: 900;
+   color: grey;
+    font-family: sans-serif
+}
+
+
+.tuttiIgiochi:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .eaPlayDiv {
   width: 100%;
   height: 320px;
