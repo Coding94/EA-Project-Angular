@@ -8,11 +8,12 @@
   background-color: white;
   transition: linear 0.3s;
   padding: 0 30px;
+  overflow: scroll;
 }
 
-/* .asideDiv::-webkit-scrollbar {
+.asideDiv::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .darkBgDiv {
   position: absolute;

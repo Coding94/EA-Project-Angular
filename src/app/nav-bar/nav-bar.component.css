@@ -61,6 +61,10 @@
   transition: linear 0.5s;
 } */
 
+.curtainEA {
+  width: 200px;
+}
+
 /* .asideDiv {
   height: 100vh;
   width: 420px;
