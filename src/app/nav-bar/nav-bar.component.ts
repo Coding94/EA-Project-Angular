@@ -23,7 +23,7 @@ export class NavBarComponent implements OnInit {
 
   openAsideDiv() {
     this.control$.next(true);
-    this.servLayout.openAside('asideDivOnClick');
+    // this.servLayout.openAside('asideDivOnClick');
   }
 
   navAnim() {
