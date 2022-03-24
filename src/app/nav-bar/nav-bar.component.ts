@@ -94,6 +94,7 @@ export class NavBarComponent implements OnInit {
       childrenOfDivLinks[i].addEventListener('mouseover', () => {
         curtain.style.opacity = '1';
         curtain.style.transform = 'scaleY(1)';
+        curtain.style.transformOrigin = 'top';
         curtain.style.position = 'absolute';
         curtain.style.top = '45px';
         curtain.style.right = '-200px';
