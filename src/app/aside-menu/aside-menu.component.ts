@@ -29,6 +29,7 @@ export class AsideMenuComponent implements OnInit {
     console.log('click sulla x');
     this.nomeClasseAside = '';
     document.body.style.overflow = 'visible';
+    this.observable.next(false);
   }
 }
 
