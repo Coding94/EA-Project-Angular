@@ -51,6 +51,8 @@ export class MainHeaderComponent implements OnInit {
     } else if (this.headerDiv.style.minHeight === "450px" && this.questionRender === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
+
       // this.renderer.setStyle(this.wrapperQuestion,'transform','translateY(300px)')
       // this.renderer.setStyle(this.wrapperQuestion,'opacity','1');
       this.userRender = true;
@@ -58,6 +60,8 @@ export class MainHeaderComponent implements OnInit {
     } else {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
+
       setTimeout(() => {
          this.userRender = false;
          this.questionRender = false;
@@ -70,6 +74,8 @@ export class MainHeaderComponent implements OnInit {
     if (this.headerDiv.style.minHeight === "40px") {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
+
       setTimeout(() => {
         this.questionRender = true;
       }, 160);
@@ -77,11 +83,14 @@ export class MainHeaderComponent implements OnInit {
     } else if (this.headerDiv.style.minHeight === "450px" && this.userRender === true) {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "450px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
       this.questionRender = true;
       this.userRender = false;
     } else {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
       this.renderer.setStyle(this.headerDiv, 'transition', "ease-in-out 0.3s");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
+
       setTimeout(() => {
          this.userRender = false;
          this.questionRender = false;
@@ -93,6 +102,7 @@ export class MainHeaderComponent implements OnInit {
   xIconClick() {
     if (this.headerDiv.style.minHeight === "450px") {
       this.renderer.setStyle(this.headerDiv, 'minHeight', "40px");
+      this.renderer.setStyle(this.headerDiv, 'zIndex', "11");
       setTimeout(() => {
         this.userRender = false;
         this.questionRender = false;
