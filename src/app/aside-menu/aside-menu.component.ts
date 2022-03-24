@@ -30,6 +30,8 @@ export class AsideMenuComponent implements OnInit {
     this.nomeClasseAside = '';
     document.body.style.overflow = 'visible';
     this.observable.next(false);
+    let div = document.querySelector('.darkBgDiv');
+    div!.remove();
   }
 }
 

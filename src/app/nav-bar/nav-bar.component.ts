@@ -24,6 +24,10 @@ export class NavBarComponent implements OnInit {
   openAsideDiv() {
     this.control$.next(true);
     // this.servLayout.openAside('asideDivOnClick');
+    document.body.style.overflow = 'hidden';
+    let div = document.createElement('div');
+    document.body.appendChild(div);
+    div.classList.add('darkBgDiv');
   }
 
   navAnim() {
