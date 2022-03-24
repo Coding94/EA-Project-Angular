@@ -199,7 +199,7 @@ export class NavBarComponent implements OnInit {
         imgs.style.transform = 'rotateX(180deg)';
         imgs.style.transition = 'linear 0.4s';
         imgs.style.fill = '#ff6161';
-        childrenOfDivLinks[i].style.cursor = 'default';
+        childrenOfDivLinks[i].style.cursor = 'pointer';
         childrenOfDivLinks[i].style.color = '#ff6161';
         childrenOfDivLinks[i].style.position = 'relative';
       });

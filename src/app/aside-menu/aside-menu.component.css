@@ -33,6 +33,7 @@
   height: 16px;
   width: 16px;
   padding-bottom: 25px;
+  cursor: pointer;
 }
 
 .eaPlayDiv {
@@ -45,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .littleCardAside {
@@ -53,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .cardFifa {
