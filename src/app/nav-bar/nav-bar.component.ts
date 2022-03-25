@@ -1,7 +1,16 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+  ApplicationRef,
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { WindowScrollService } from '@app/EAservices/window-scroll.service';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { LayoutService } from '../shared/layout.service';
+import { RegisterComponent } from '../register/register.component';
+import { RegisterService } from '../EAservices/register.service';
 
 @Component({
   selector: 'ea-nav-bar',
@@ -9,19 +18,34 @@ import { LayoutService } from '../shared/layout.service';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
-  constructor(private servLayout: LayoutService, private windowScroll:WindowScrollService) {}
-   
+  constructor(
+    private servLayout: LayoutService,
+    private windowScroll: WindowScrollService,
+    private register: RegisterService,
+    private ref: ApplicationRef
+  ) {}
+  controlCompleteUserData!: boolean;
+  completeUserData: any;
+
   @Input() controlVar!: boolean;
 
   @Output() openAside = new EventEmitter<BehaviorSubject<boolean>>();
-  
-  @Input() x!:any;
+
+  @Input() x!: any;
   control$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   ngOnInit(): void {
     this.navAnim();
     this.openAside.emit(this.control$);
     this.x = this.windowScroll.getX();
+    this.register.sendDataBySubj$.subscribe(
+      (data) => (
+        (this.completeUserData = data), console.log(this.completeUserData)
+      )
+    );
+  }
+  ngOnChanges() {
+    this.completeUserData;
   }
 
   openAsideDiv() {

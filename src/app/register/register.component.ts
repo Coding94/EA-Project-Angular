@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Form } from '@angular/forms';
-
+import { RegisterService } from '../EAservices/register.service';
 
 @Component({
   selector: 'ea-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
-  validity:boolean = false
+  validity: boolean = false;
+  userData!: any;
+  constructor(private register: RegisterService) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  onSubmit(x: any) {
+    console.log(x);
   }
-  onSubmit(x:Form){
-    
+  onSubmit2(x: any) {
+    this.register.getDataFromRegisterComponent(x);
   }
 }

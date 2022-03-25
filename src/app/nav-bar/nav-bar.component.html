@@ -1,4 +1,4 @@
-<div class="navBar" [ngClass]="{'topPosition': x}">
+<div class="navBar" [ngClass]="{ topPosition: x }">
   <div class="divAlignLeft">
     <div class="navBarDots" (click)="openAsideDiv()">
       <svg
@@ -15,7 +15,12 @@
       </svg>
     </div>
     <div class="eaImg">
-      <img style="  cursor: pointer"  src="../../assets/Logos/ElectronicArts2.png" alt="" width="180" />
+      <img
+        style="cursor: pointer"
+        src="../../assets/Logos/ElectronicArts2.png"
+        alt=""
+        width="180"
+      />
     </div>
     <div class="divLinks">
       <div>
@@ -99,6 +104,9 @@
         </svg>
       </div>
     </div>
+  </div>
+  <div class="pos" *ngIf="completeUserData">
+    <span>Ciao {{ completeUserData.eaid }}</span>
   </div>
 </div>
 

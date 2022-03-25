@@ -50,7 +50,7 @@
   transition: linear 0.2s;
 }
 
-.topPosition{
+.topPosition {
   transform: translateY(-40px);
   position: fixed;
   transition: all linear 0.5s;
@@ -64,6 +64,15 @@
 
 .curtainEA {
   width: 200px;
+}
+
+.pos {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  color: red;
+  font-weight: 700;
+  font-size: larger;
 }
 
 /* .asideDiv {

@@ -14,7 +14,7 @@ export class AsideMenuComponent implements OnInit {
   darkDiv: any;
   nomeClasseAside: any;
   @Input() observable!: BehaviorSubject<boolean>;
-  
+
   ngOnInit(): void {
     this.observable.subscribe((control) => {
       if (control) {
